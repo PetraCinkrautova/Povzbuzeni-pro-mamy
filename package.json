@@ -1,0 +1,24 @@
+{
+  "name": "web-povzbuzenipromamy.cz",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000P\u0000o\u0000v\u0000z\u0000b\u0000u\u0000z\u0000e\u0000n\u0000i\u0000-\u0000p\u0000r\u0000o\u0000-\u0000m\u0000a\u0000m\u0000y\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PetraCinkrautova/Povzbuzeni-pro-mamy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PetraCinkrautova/Povzbuzeni-pro-mamy/issues"
+  },
+  "homepage": "https://github.com/PetraCinkrautova/Povzbuzeni-pro-mamy#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.0"
+  }
+}
