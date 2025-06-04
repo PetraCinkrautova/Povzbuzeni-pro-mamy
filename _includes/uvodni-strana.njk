@@ -5,24 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Povzbuzení pro mámy</title>
     <link rel="stylesheet" href="/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Varta:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="images/Logo velké.svg" alt="logo-povzbuzeni-pro-mamy">
-        <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+
+<div class="maxsite">
+    <header class="header">
+    <section class="header__body">
+        <img class="header__logo" src="/images/logo_1.svg" alt="logo-povzbuzeni-pro-mamy">
+        <nav >
+        <ul class="menu">
+            <li><a class="menu__option" href="">O knize</a></li>
+            <li><a class="menu__option" href="">Blog</a></li>
+            <li><a class="menu__option" href="">O autorce</a></li>
+            <li><a class="menu__option" href="">Kontakt</a></li>
+            <li><a class="menu__option" href="">Na nákup</a></li>
         </ul>
+        </nav>
+        </section>
+         <p class="quote">...pro všechny mámy, které touží povzbudit - sebe či jiné mámy kolem.</p>
     </header>
-    <main>
+   
+    
+
+    <div>
 {{content | safe}}
-    </main>
+    </div>
+    
     <footer>
 
     </footer>
     
+</div>
 </body>
 </html>

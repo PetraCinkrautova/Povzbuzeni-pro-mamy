@@ -1,4 +1,114 @@
 body {
   box-sizing: border-box;
   background-color: #F9F9F9;
+}
+
+.maxsite {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  margin: 0 20px;
+}
+
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+.menu__option {
+  text-decoration: none;
+  margin: 15px;
+  color: #232C57;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Lora", serif;
+}
+
+/*  
+@keyframes move {
+    0% {transform: translate(0,0);}
+    50% {transform: translate(1800px,0);}
+    100% {transform: translate(0,0);}
+
+}
+
+ animation-name: move;
+    animation-duration: 30s;*/
+.quote {
+  margin-top: 0;
+  background-color: #F9F9F9;
+  width: 500px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Lora", serif;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 0;
+  color: #232C57;
+  letter-spacing: 1.4;
+}
+
+.main {
+  background-image: url(/images/wood-pozadi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 20px;
+}
+
+.book-info {
+  margin-top: 0;
+  grid-column: 1/2;
+  font-family: "Varta", sans-serif;
+}
+.book-info__text {
+  margin: 20px;
+  background-color: #F9F9F9;
+  opacity: 90%;
+  padding: 30px;
+}
+.book-info__questions {
+  margin: 20px;
+  background-color: #F9F9F9;
+  opacity: 90%;
+  padding: 30px;
+}
+.book-info__header {
+  margin-top: 0;
+  font-family: "Lora", serif;
+}
+
+.book-image {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.book-image__cover {
+  width: 330px;
+  margin-top: 20px;
+}
+
+.bottom-sale {
+  background-color: #CD0046;
+  padding: 10px 30px;
+  color: white;
+  margin-top: 20px;
+  font-family: "Varta", sans-serif;
+  font-size: 16px;
+  border: none;
 }/*# sourceMappingURL=style.css.map */

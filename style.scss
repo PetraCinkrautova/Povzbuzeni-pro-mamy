@@ -1,4 +1,150 @@
 $background-color: #F9F9F9;
+$second-color: #232C57;
+$primary-color: #CD0046;
+$main-font-family: "Varta", sans-serif;
+$second-font-family: "Lora", serif;
+
+
 
 body {box-sizing: border-box;
-background-color: $background-color;}
+background-color: $background-color;
+
+
+}
+
+.maxsite {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+//***** hlavicka - zacatek *****
+
+.header {
+    position: relative;
+    margin: 0 20px;
+}
+
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+
+
+
+  
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+
+    &__option {text-decoration: none;
+        margin: 15px;
+        color: $second-color;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: $second-font-family;
+
+
+    }
+    
+    
+}
+
+
+/*  
+@keyframes move {
+    0% {transform: translate(0,0);}
+    50% {transform: translate(1800px,0);}
+    100% {transform: translate(0,0);}
+    
+}
+
+ animation-name: move;
+    animation-duration: 30s;*/
+
+.quote {
+    margin-top: 0;
+    background-color: $background-color;
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+    font-family: $second-font-family;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 0;
+    color: $second-color;
+    letter-spacing: 1.4;
+ 
+   
+}
+
+//***** hlavicka - konec *****
+
+//***** O knize - zacatek *****
+
+
+
+.main {
+    background-image: url(/images/wood-pozadi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+}
+
+.book-info {
+    margin-top: 0;
+    grid-column: 1/2;
+    font-family: $main-font-family;
+
+    &__text {
+        margin: 20px;
+        background-color: $background-color;
+        opacity: 90%;
+        padding: 30px;
+    }
+
+    &__questions {
+        margin: 20px;
+        background-color: $background-color;
+        opacity: 90%;
+        padding: 30px;
+    }
+    
+    &__header {
+        margin-top: 0;
+        font-family: $second-font-family;
+    } 
+}
+
+.book-image {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+
+    &__cover {
+        width: 330px;
+        margin-top: 20px;
+    }
+}
+
+.bottom-sale {
+    background-color: $primary-color;
+    padding: 10px 30px;
+    color: white;
+    margin-top: 20px;
+    font-family: $main-font-family;
+    font-size: 16px;
+    border: none;
+    
+  
+}
