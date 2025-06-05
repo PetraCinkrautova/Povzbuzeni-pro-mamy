@@ -1,7 +1,7 @@
 $background-color: #F9F9F9;
 $second-color: #232C57;
 $primary-color: #CD0046;
-$main-font-family: "Varta", sans-serif;
+$main-font-family: "Montserrat", sans-serif;
 $second-font-family: "Lora", serif;
 
 
@@ -22,17 +22,19 @@ background-color: $background-color;
 .header {
     position: relative;
     margin: 0 20px;
+
+ /*   &__logo {
+        background-image: url(/images/logo_1.svg);
+        background-size: 100%;
+    } */
 }
 
 .header__body {
     display: flex;
     justify-content: space-between;
     align-items:center ;
-
-
-
-  
 }
+
 
 .menu {
     display: flex;
@@ -95,56 +97,118 @@ background-color: $background-color;
     background-size: cover;
     height: 800px;
     display: grid;
-    grid-template-columns: 60% 40%;
-    gap: 20px;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
 }
 
 .book-info {
     margin-top: 0;
-    grid-column: 1/2;
-    font-family: $main-font-family;
+    grid-column: 2/3;
+    grid-row: 1;
+    font-family: $second-font-family;
 
     &__text {
-        margin: 20px;
+        margin: 30px;
         background-color: $background-color;
         opacity: 90%;
-        padding: 30px;
+        padding: 20px;
+        line-height: 1.5;
+        width: 700px;
     }
 
     &__questions {
-        margin: 20px;
+        margin: 30px;
         background-color: $background-color;
         opacity: 90%;
-        padding: 30px;
+        padding: 20px;
+        width: 700px;
     }
     
     &__header {
         margin-top: 0;
         font-family: $second-font-family;
+        font-size: 18px;
+        
     } 
+    &__name1 {
+        font-size: 18px;
+        color: $second-color;
+        margin-bottom: 30px;
+       
+    }
+
+    &__name2 {
+        color: $primary-color;
+        font-weight: bold;
+
+    }
+    &__bold {
+        font-weight: bold;
+    }
 }
 
 .book-image {
-    grid-column: 2/3;
+    grid-column: 1/2;
+     grid-row: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
   
 
     &__cover {
-        width: 330px;
-        margin-top: 20px;
+        width: 380px;
+        margin-top: 30px;
     }
-}
 
-.bottom-sale {
+    &__bottom {
     background-color: $primary-color;
     padding: 10px 30px;
     color: white;
     margin-top: 20px;
     font-family: $main-font-family;
     font-size: 16px;
-    border: none;
+    text-decoration: none;
+    letter-spacing: 1.3;
     
-  
+}
+}
+
+// ****** Paticka - zacatek ******
+
+.footer {
+    background-image: linear-gradient(#FFE7F7, #CD0046);
+    height: 200px;
+    padding: 30px;
+    font-family: $second-font-family;
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        height: 90%;
+        
+        
+    }
+    &__buy-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+    }
+    &__rigts {
+        text-align: center;
+        font-size: 16px;
+      
+    }
+    &__file,
+    &__instagram {
+        color: black;
+        text-decoration: none;
+    }
+    &__instagram {
+        background-image: url(/images/instagram-ikona.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: left;
+        padding-left: 30px;
+        
+    }
 }

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Povzbuzení pro mámy</title>
+    <title>{{title}}</title>
     <link rel="stylesheet" href="/CSS/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Varta:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -15,9 +15,9 @@
         <img class="header__logo" src="/images/logo_1.svg" alt="logo-povzbuzeni-pro-mamy">
         <nav >
         <ul class="menu">
-            <li><a class="menu__option" href="">O knize</a></li>
+            <li><a class="menu__option" href="/">O knize</a></li>
             <li><a class="menu__option" href="">Blog</a></li>
-            <li><a class="menu__option" href="">O autorce</a></li>
+            <li><a class="menu__option" href="/oautorce/">O autorce</a></li>
             <li><a class="menu__option" href="">Kontakt</a></li>
             <li><a class="menu__option" href="">Na nákup</a></li>
         </ul>
@@ -32,8 +32,24 @@
 {{content | safe}}
     </div>
     
-    <footer>
+    <footer class="footer">
+        <div class="footer__info">
+            <section class="footer__buy-info">
+                <h3>O nákupu</h3>
+                <a class="footer__file" href="#">Obchodní podmínky</a>
+                <a class="footer__file" href="#">Reklamační řád</a>
+                <a class="footer__file" href="#">Soubory cookies</a>
+                <a class="footer__file" href="#">Podmínky ochrany osobních údajů</a>
+            </section>
+            <section class="footer__kontakt-info">
+                <h3>Kontakt</h3>
+                <p>Mgr. Petra Cinkrautová</p>
+                  <p>  povzbuzenipromamy@gmail.com </p>
 
+                <a class="footer__instagram" href="https://www.instagram.com/">Instagram</a>
+            </section>
+        </div>
+        <p class="footer__rigts"> © 2025 povzbuzenipromamy.cz  -  Všechna práva vyhrazena </p>
     </footer>
     
 </div>
