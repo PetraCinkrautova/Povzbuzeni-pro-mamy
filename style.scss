@@ -3,6 +3,9 @@ $second-color: #232C57;
 $primary-color: #CD0046;
 $main-font-family: "Montserrat", sans-serif;
 $second-font-family: "Lora", serif;
+$main-fontsize: 18px;
+$fontsize-h2: 24px;
+
 
 
 
@@ -12,108 +15,120 @@ background-color: $background-color;
 
 }
 
+
 .maxsite {
-    max-width: 1800px;
     margin: 0 auto;
+    max-width: 760px;
+    
 }
+  
+
+
 
 //***** hlavicka - zacatek *****
 
 .header {
-    position: relative;
-    margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+     }
+   
 
- /*   &__logo {
-        background-image: url(/images/logo_1.svg);
-        background-size: 100%;
-    } */
-}
+ 
+
 
 .header__body {
     display: flex;
-    justify-content: space-between;
-    align-items:center ;
-}
+    flex-direction: column;
+    text-align: center;
+   
+
+   &__logo {
+    width: 100%;
+     }
+     
+       
+    }
+
+
 
 
 .menu {
-    display: flex;
+    display: inline-block;
     list-style: none;
 
-    &__option {text-decoration: none;
+    &__option {
+        text-decoration: none;
         margin: 15px;
         color: $second-color;
-        font-size: 20px;
+        font-size: 14px;
         font-weight: 600;
         font-family: $second-font-family;
-
-
     }
-    
-    
+
 }
-
-
-/*  
-@keyframes move {
-    0% {transform: translate(0,0);}
-    50% {transform: translate(1800px,0);}
-    100% {transform: translate(0,0);}
-    
-}
-
- animation-name: move;
-    animation-duration: 30s;*/
 
 .quote {
     margin-top: 0;
     background-color: $background-color;
-    width: 500px;
     padding: 20px;
     text-align: center;
     font-family: $second-font-family;
     font-weight: 600;
-    position: absolute;
-    bottom: 0;
-    left: 300px;
-    font-size: 14px;
     padding: 10px;
     margin-bottom: 0;
     color: $second-color;
     letter-spacing: 1.4;
+    font-size: 14px;
+
+     }
  
    
-}
+
 
 //***** hlavicka - konec *****
 
 //***** O knize - zacatek *****
 
-
-
-.main {
+.background {
     background-image: url(/images/wood-pozadi.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 30px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 100%;
 }
+
+.main {  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    
+   
+    
+    }
+
+
+
 
 .book-info {
     margin-top: 0;
-    grid-column: 2/3;
-    grid-row: 1;
     font-family: $second-font-family;
+    line-height: 1.5;
+    font-size: 14px;
+    order: 2;
+ 
 
     &__text {
         margin: 30px;
         background-color: $background-color;
         opacity: 90%;
         padding: 20px;
-        line-height: 1.5;
-        width: 700px;
+       
+      
+    
     }
 
     &__questions {
@@ -121,17 +136,18 @@ background-color: $background-color;
         background-color: $background-color;
         opacity: 90%;
         padding: 20px;
-        width: 700px;
+      
+    
     }
     
     &__header {
         margin-top: 0;
         font-family: $second-font-family;
-        font-size: 18px;
+        font-size: $fontsize-h2;
         
     } 
     &__name1 {
-        font-size: 18px;
+        font-size: $fontsize-h2;
         color: $second-color;
         margin-bottom: 30px;
        
@@ -140,19 +156,26 @@ background-color: $background-color;
     &__name2 {
         color: $primary-color;
         font-weight: bold;
+        font-size: $fontsize-h2;
 
     }
     &__bold {
         font-weight: bold;
     }
+
+   
 }
 
 .book-image {
-    grid-column: 1/2;
-     grid-row: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    order: 1;
+
+ 
   
 
     &__cover {
@@ -168,10 +191,105 @@ background-color: $background-color;
     font-family: $main-font-family;
     font-size: 16px;
     text-decoration: none;
-    letter-spacing: 1.3;
+    letter-spacing: 1.7;
+    font-weight: 600;
     
 }
 }
+
+.book-benefits-text {
+   
+    padding: 20px;
+    margin: 30px;
+    background-color: $background-color;
+    opacity: 90%;
+    padding: 20px;
+
+    font-family: $second-font-family;
+    line-height: 1.7;
+    width: 800px;
+    order: 4;
+    font-size: 14px;
+      
+    
+
+    &__header {
+        font-size: 18px;
+    }
+   
+}
+
+.book-benefits-photo {
+  
+    align-items: center;
+    margin: 30px;
+    order: 3;
+    
+        
+    
+
+    &__img {
+    width: 100%;
+    margin: 0;
+    object-fit: contain;
+
+    }
+}
+
+.reading-tips__photo {
+    align-items: center;
+    margin: 30px;
+    order: 5;
+    
+
+    &__img {
+    width: 100%;
+    }
+}
+ .reading-tips__text {
+    margin: 30px;
+    background-color: $background-color;
+    opacity: 90%;
+    padding: 20px;
+    font-size: 14px;
+    font-family: $second-font-family;
+    line-height: 1.7;
+    order: 6;
+    }
+ 
+
+.reviews {
+    width: 100%;
+
+    &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px;
+    gap: 40px;
+    text-align: center;
+    margin: 30px 0;
+    overflow-x:scroll;
+    }
+
+    &__box {
+        width: 500px;
+        padding: 20px;
+        background-color: $primary-color;
+        color: white;
+        border-radius: 10px;
+    }
+
+    &__text {
+        font-family: $second-font-family;
+        font-size: $main-fontsize;
+        line-height: 1.7;
+    }
+
+
+}
+
+
+
 
 // ****** Paticka - zacatek ******
 
@@ -180,11 +298,7 @@ background-color: $background-color;
     height: 200px;
     padding: 30px;
     font-family: $second-font-family;
-
-    &__info {
-        display: flex;
-        justify-content: space-between;
-        height: 90%;
+    margin-top: 30px;
         
         
     }
@@ -211,4 +325,5 @@ background-color: $background-color;
         padding-left: 30px;
         
     }
-}
+
+
