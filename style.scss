@@ -204,10 +204,8 @@ background-color: $background-color;
     background-color: $background-color;
     opacity: 90%;
     padding: 20px;
-
     font-family: $second-font-family;
     line-height: 1.7;
-    width: 800px;
     order: 4;
     font-size: 14px;
       
@@ -247,7 +245,6 @@ background-color: $background-color;
     }
 }
  .reading-tips__text {
-    margin: 30px;
     background-color: $background-color;
     opacity: 90%;
     padding: 20px;
@@ -255,11 +252,15 @@ background-color: $background-color;
     font-family: $second-font-family;
     line-height: 1.7;
     order: 6;
+    margin: 30px;
+
+    &__header {font-size: 16px;}
     }
  
 
 .reviews {
     width: 100%;
+    margin: 30px;
 
     &__grid {
     display: grid;
@@ -272,7 +273,7 @@ background-color: $background-color;
     }
 
     &__box {
-        width: 500px;
+        width: 300px;
         padding: 20px;
         background-color: $primary-color;
         color: white;
@@ -281,7 +282,7 @@ background-color: $background-color;
 
     &__text {
         font-family: $second-font-family;
-        font-size: $main-fontsize;
+        font-size: 14px;
         line-height: 1.7;
     }
 
@@ -295,13 +296,17 @@ background-color: $background-color;
 
 .footer {
     background-image: linear-gradient(#FFE7F7, #CD0046);
-    height: 200px;
-    padding: 30px;
+    height: auto;
+    padding: 30px 30px 10px 30px;
     font-family: $second-font-family;
     margin-top: 30px;
+    font-size: 12px;
         
-        
+    &__info {
+        display: flex;
+        justify-content: space-between;
     }
+    
     &__buy-info {
         display: grid;
         grid-template-columns: 1fr;
@@ -309,7 +314,8 @@ background-color: $background-color;
     }
     &__rigts {
         text-align: center;
-        font-size: 16px;
+        font-size: 12px;
+        margin-top: 40px;
       
     }
     &__file,
@@ -326,4 +332,15 @@ background-color: $background-color;
         
     }
 
+    &__kontakt-info {
+        margin-left: 20px;
+    }
 
+
+    &__kontakt-info p {
+        margin: 5px;
+      
+
+    }
+
+}

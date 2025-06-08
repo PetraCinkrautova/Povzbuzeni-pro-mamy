@@ -16,7 +16,8 @@ body {
 }
 
 .header__body {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 .header__body__logo {
@@ -43,14 +44,10 @@ body {
   text-align: center;
   font-family: "Lora", serif;
   font-weight: 600;
-  position: absolute;
   padding: 10px;
   margin-bottom: 0;
   color: #232C57;
   letter-spacing: 1.4;
-  left: 0;
-  bottom: 5px;
-  width: 500px;
   font-size: 14px;
 }
 
@@ -66,25 +63,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-repeat: repeat;
 }
 
 .book-info {
   margin-top: 0;
-  grid-column: 2/3;
-  grid-row: 1;
   font-family: "Lora", serif;
-  font-size: 18px;
   line-height: 1.5;
-  width: 650px;
-}
-@media (max-width: 768px) {
-  .book-info {
-    grid-column: none;
-    grid-row: none;
-    font-size: 14px;
-    order: 2;
-  }
+  font-size: 14px;
+  order: 2;
 }
 .book-info__text {
   margin: 30px;
@@ -118,30 +104,17 @@ body {
 }
 
 .book-image {
-  grid-column: 1/2;
-  grid-row: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-}
-@media (max-width: 768px) {
-  .book-image {
-    grid-column: none;
-    grid-row: none;
-    margin-left: auto;
-    margin-right: auto;
-    order: 1;
-  }
+  margin-left: auto;
+  margin-right: auto;
+  order: 1;
 }
 .book-image__cover {
   width: 380px;
   margin-top: 30px;
-}
-@media (max-width: 768px) {
-  .book-image__cover {
-    width: 400px;
-  }
 }
 .book-image__bottom {
   background-color: #CD0046;
@@ -157,42 +130,23 @@ body {
 
 .book-benefits-text {
   padding: 20px;
-  grid-column: 1/2;
-  grid-row: 2;
   margin: 30px;
   background-color: #F9F9F9;
   opacity: 90%;
   padding: 20px;
-  font-size: 18px;
   font-family: "Lora", serif;
   line-height: 1.7;
-  width: 800px;
-}
-@media (max-width: 768px) {
-  .book-benefits-text {
-    grid-column: none;
-    grid-row: none;
-    order: 4;
-    font-size: 14px;
-  }
+  order: 4;
+  font-size: 14px;
 }
 .book-benefits-text__header {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .book-benefits-photo {
-  grid-column: 2/3;
-  grid-row: 2;
   align-items: center;
   margin: 30px;
-}
-@media (max-width: 768px) {
-  .book-benefits-photo {
-    grid-column: none;
-    grid-row: none;
-    order: 3;
-    width: 700px;
-  }
+  order: 3;
 }
 .book-benefits-photo__img {
   width: 100%;
@@ -200,53 +154,33 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
-@media (max-width: 768px) {
-  .book-benefits-photo__img {
-    width: 100%;
-  }
-}
 
 .reading-tips__photo {
-  grid-column: 1/2;
-  grid-row: 3;
   align-items: center;
   margin: 30px;
-}
-@media (max-width: 768px) {
-  .reading-tips__photo {
-    grid-column: none;
-    grid-row: none;
-    order: 5;
-  }
+  order: 5;
 }
 .reading-tips__photo__img {
   width: 100%;
 }
 
 .reading-tips__text {
-  grid-column: 2/3;
-  grid-row: 3;
-  margin: 30px;
   background-color: #F9F9F9;
   opacity: 90%;
   padding: 20px;
-  width: 800px;
-  font-size: 18px;
+  font-size: 14px;
   font-family: "Lora", serif;
   line-height: 1.7;
+  order: 6;
+  margin: 30px;
 }
-@media (max-width: 768px) {
-  .reading-tips__text {
-    grid-column: none;
-    grid-row: none;
-    order: 6;
-    width: 100%;
-    font-size: 14px;
-  }
+.reading-tips__text__header {
+  font-size: 16px;
 }
 
 .reviews {
   width: 100%;
+  margin: 30px;
 }
 .reviews__grid {
   display: grid;
@@ -258,7 +192,7 @@ body {
   overflow-x: scroll;
 }
 .reviews__box {
-  width: 500px;
+  width: 300px;
   padding: 20px;
   background-color: #CD0046;
   color: white;
@@ -266,21 +200,21 @@ body {
 }
 .reviews__text {
   font-family: "Lora", serif;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.7;
 }
 
 .footer {
   background-image: linear-gradient(#FFE7F7, #CD0046);
-  height: 200px;
-  padding: 30px;
+  height: auto;
+  padding: 30px 30px 10px 30px;
   font-family: "Lora", serif;
   margin-top: 30px;
+  font-size: 12px;
 }
 .footer__info {
   display: flex;
   justify-content: space-between;
-  height: 90%;
 }
 .footer__buy-info {
   display: grid;
@@ -289,7 +223,8 @@ body {
 }
 .footer__rigts {
   text-align: center;
-  font-size: 16px;
+  font-size: 12px;
+  margin-top: 40px;
 }
 .footer__file, .footer__instagram {
   color: black;
@@ -301,4 +236,10 @@ body {
   background-size: 20px;
   background-position: left;
   padding-left: 30px;
+}
+.footer__kontakt-info {
+  margin-left: 20px;
+}
+.footer__kontakt-info p {
+  margin: 5px;
 }/*# sourceMappingURL=style.css.map */
