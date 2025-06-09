@@ -54,6 +54,13 @@ body {
   border-bottom: 2px solid #232C57;
   padding-left: 0;
 }
+.menu__box {
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+.menu__box:active {
+  transform: scale(0.9);
+}
 .menu__option {
   text-decoration: none;
   color: #232C57;
@@ -70,6 +77,10 @@ body {
     font-size: 24px;
     font-weight: 600;
   }
+}
+.menu__option:hover {
+  color: #CD0046;
+  text-shadow: 2px 4px 4px 4px rgb(7, 6, 6);
 }
 @media (min-width: 901px) {
   .menu {
@@ -104,11 +115,13 @@ body {
   letter-spacing: 1.6;
   font-size: 14px;
 }
+
 .background {
   background-image: url(/images/wood-pozadi.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: 100%;
+  padding-bottom: 10px;
 }
 
 .main {
@@ -144,12 +157,14 @@ body {
   background-color: #F9F9F9;
   opacity: 90%;
   padding: 30px;
+  border-radius: 5px;
 }
 .book-info__questions {
   margin: 30px;
   background-color: #F9F9F9;
   opacity: 90%;
   padding: 30px;
+  border-radius: 5px;
 }
 @media (min-width: 901px) {
   .book-info__questions {
@@ -191,6 +206,7 @@ body {
     grid-row: 1;
     grid-column: 2/3;
     display: block;
+    font-size: 16px;
   }
 }
 
@@ -206,22 +222,39 @@ body {
 .book-image__cover {
   width: 380px;
   margin-top: 30px;
+  border: 0.5px solid rgb(147, 138, 138);
+  box-shadow: 1px 3px 3px 2px rgb(218, 217, 217);
+  display: block;
+  border-radius: 5px 0 0 5px;
+  border-left: 3px solid rgb(61, 59, 59);
 }
 @media (min-width: 1150px) {
   .book-image__cover {
-    width: 420px;
+    width: 500px;
+    justify-content: flex-start;
   }
 }
 .book-image__bottom {
   background-color: #CD0046;
   padding: 10px 30px;
   color: white;
-  margin-top: 20px;
+  margin-top: 40px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   text-decoration: none;
   letter-spacing: 1.7;
   font-weight: 600;
+  box-shadow: 1px 1px 1px 1.5px rgb(218, 217, 217);
+  border-radius: 5px;
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+.book-image__bottom:hover {
+  transform: scale(1.1);
+  background-color: #a91244;
+}
+.book-image__bottom:active {
+  transform: scale(1);
 }
 @media (min-width: 901px) {
   .book-image {
@@ -249,6 +282,7 @@ body {
   line-height: 1.7;
   order: 4;
   font-size: 14px;
+  border-radius: 5px;
 }
 .book-benefits-text__header {
   font-size: 18px;
@@ -260,7 +294,8 @@ body {
 }
 @media (min-width: 1150px) {
   .book-benefits-text {
-    grid-row: 2/3;
+    grid-row: 2;
+    font-size: 16px;
   }
 }
 
@@ -268,6 +303,12 @@ body {
   align-items: center;
   margin: 30px;
   order: 3;
+}
+@media (min-width: 1150px) {
+  .book-benefits-photo {
+    grid-row: 2;
+    grid-column: 2/3;
+  }
 }
 .book-benefits-photo__img {
   width: 100%;
@@ -280,6 +321,11 @@ body {
   align-items: center;
   margin: 30px;
   order: 5;
+}
+@media (min-width: 1150px) {
+  .reading-tips__photo {
+    grid-column: 1/2;
+  }
 }
 .reading-tips__photo__img {
   width: 100%;
@@ -294,9 +340,11 @@ body {
   line-height: 1.7;
   order: 6;
   margin: 30px;
+  border-radius: 5px;
 }
 .reading-tips__text__header {
   font-size: 16px;
+  color: white;
 }
 @media (min-width: 901px) {
   .reading-tips__text {
@@ -308,12 +356,24 @@ body {
   .reading-tips__text {
     grid-column: 2/3;
     grid-row: 3;
+    font-size: 16px;
   }
 }
 
 .reviews {
   width: 100%;
   margin: 30px;
+}
+.reviews__header {
+  color: #CD0046;
+  font-size: 24px;
+  text-shadow: 1px 1px 1px 2px rgb(14, 13, 13);
+  width: 320px;
+  background-color: #F9F9F9;
+  opacity: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Lora", serif;
 }
 .reviews__grid {
   display: grid;
@@ -338,6 +398,10 @@ body {
 }
 .reviews__text br {
   margin-bottom: 20px;
+}
+.reviews__name {
+  border-top: 1px solid white;
+  padding-top: 10px;
 }
 
 .footer {
@@ -378,4 +442,34 @@ body {
 }
 .footer__kontakt-info p {
   margin: 5px;
+}
+
+.about-writer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat 9 auto;
+  gap: 20px;
+}
+.about-writer__text {
+  font-family: "Lora", serif;
+  line-height: 1.5;
+  font-size: 14px;
+  margin: 10px 30px 10px 30px;
+  background-color: #F9F9F9;
+  opacity: 90%;
+  padding: 30px;
+  border-radius: 5px;
+}
+.about-writer__photo {
+  width: 100%;
+  border-radius: 5px;
+}
+.about-writer__photo-box {
+  margin: 10px 30px 10px 30px;
+}
+@media (min-width: 1150px) {
+  .about-writer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat 3 auto;
+  }
 }/*# sourceMappingURL=style.css.map */
