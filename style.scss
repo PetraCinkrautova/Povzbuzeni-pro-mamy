@@ -175,6 +175,7 @@ background-color: $background-color;
     background-attachment: fixed;
     background-size: 100%;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .main {  
@@ -580,37 +581,101 @@ background-color: $background-color;
 // ****** O autorce - začátek ******
 
 .about-writer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat (9 auto);
-    gap: 20px;
+    background-color: $background-color;
+    margin: 40px 20px;
+    padding: 20px 10px;
+
+     &__header {
+        margin-top: 0;
+    }
+
+    &__grid { 
+
+        @media (min-width:901px) { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
 
-    &__text {
+     @media (min-width:1150px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3 auto);
+        gap: 20px;
+
+    }
+
+  
+
+    }
+
+    &__text1,
+    &__text3 {
     font-family: $second-font-family;
     line-height: 1.5;
     font-size: 14px;
-    margin: 10px 30px 10px 30px;
-    background-color: $background-color;
-    opacity: 90%;
-    padding: 30px;
+    padding: 10px;
     border-radius: 5px;
+
+     @media (min-width:1150px) {
+        font-size: 14px;
+     }
+
+     @media (min-width:1500px) {
+        font-size: 18px;
+     }
+       
+    }
+
+     &__text2 {
+    font-family: $second-font-family;
+    line-height: 1.5;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+
+     @media (min-width:1150px) {
+        font-size: 14px;
+        grid-column: 2/3;
+     }
+       @media (min-width:1500px) {
+        font-size: 18px;
+     }
        
     }
     
     &__photo {
         width: 100%;
         border-radius: 5px;
+        margin: 0;
         
     }
 
-    &__photo-box {
-        margin: 10px 30px 10px 30px;
-       
+    &__photo-box1,
+     &__photo-box2,
+      &__photo-box3{
+     
+        margin: 10px;
+
+
+      }
+
+    
+
+    &__photo-box2 {
+         @media (min-width:1150px) {
+            grid-column: 1/2;
+            grid-row: 2;
+         }
     }
 
-     @media (min-width:1150px) {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat (3 auto);
-     }
+
+
+   
+
 }
+
+
+
