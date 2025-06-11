@@ -190,6 +190,7 @@ background-color: $background-color;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     gap: 20px;
+    align-items:normal;
     }
     
 
@@ -217,7 +218,7 @@ background-color: $background-color;
         margin: 30px;
         background-color: $background-color;
         opacity: 90%;
-        padding: 30px;
+        padding: 20px;
         border-radius: 5px;
        
       
@@ -276,8 +277,12 @@ background-color: $background-color;
     grid-row: 1;
     grid-column: 2/3;
     display: block;
-    font-size: $main-fontsize
+    font-size: 16px;
     }
+
+     @media (min-width:1500px) {
+            font-size: 16px;
+     }
 
    
 }
@@ -301,18 +306,20 @@ background-color: $background-color;
         width: 380px;
         margin-top: 30px;
         border: 0.5px solid rgb(147, 138, 138);
-        box-shadow: 1px 3px 3px 2px rgb(218, 217, 217);
+        box-shadow: 2px 3px 3px 2px rgb(218, 217, 217);
         display: block;
         border-radius: 5px 0 0 5px;
-        border-left: 3px solid rgb(61, 59, 59);
+        
        
        
 
 
     @media (min-width:1150px) {
-        width: 500px;
+        width: 440px;
         justify-content: flex-start;
     }
+
+   
 
   
         
@@ -370,7 +377,7 @@ background-color: $background-color;
     margin: 30px;
     background-color: $background-color;
     opacity: 90%;
-    padding: 50px;
+    padding: 20px;
     font-family: $second-font-family;
     line-height: 1.7;
     order: 4;
@@ -383,6 +390,10 @@ background-color: $background-color;
 
     &__header {
         font-size: 18px;
+     @media (min-width:1150px) {
+        font-size: $fontsize-h2;
+     }
+
     }
 
     @media (min-width:901px) {
@@ -412,7 +423,7 @@ background-color: $background-color;
     &__img {
     width: 100%;
     margin: 0;
-    object-fit: contain;
+    object-fit: cover;
 
     }
 }
@@ -435,7 +446,7 @@ background-color: $background-color;
  .reading-tips__text {
     background-color: $background-color;
     opacity: 90%;
-    padding: 50px;
+    padding: 20px;
     font-size: 14px;
     font-family: $second-font-family;
     line-height: 1.7;
@@ -569,9 +580,18 @@ background-color: $background-color;
 
     &__kontakt-info p {
         margin: 5px;
-      
 
     }
+
+     &__email {
+        color: black;
+        text-decoration: none;
+
+    }
+
+       @media (min-width:1150px) {
+        font-size: 14px;
+       }
 
 }
 
@@ -587,6 +607,7 @@ background-color: $background-color;
 
      &__header {
         margin-top: 0;
+        border-bottom: 1px solid black;
     }
 
     &__grid { 
@@ -603,7 +624,8 @@ background-color: $background-color;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3 auto);
-        gap: 20px;
+        gap: 5px;
+        align-items: normal;
 
     }
 
@@ -624,7 +646,7 @@ background-color: $background-color;
      }
 
      @media (min-width:1500px) {
-        font-size: 18px;
+        font-size: 16px;
      }
        
     }
@@ -641,7 +663,7 @@ background-color: $background-color;
         grid-column: 2/3;
      }
        @media (min-width:1500px) {
-        font-size: 18px;
+        font-size: 16px;
      }
        
     }
@@ -654,28 +676,136 @@ background-color: $background-color;
     }
 
     &__photo-box1,
-     &__photo-box2,
-      &__photo-box3{
-     
+    &__photo-box2,
+    &__photo-box3{
         margin: 10px;
-
-
       }
-
-    
 
     &__photo-box2 {
          @media (min-width:1150px) {
             grid-column: 1/2;
             grid-row: 2;
          }
-    }
-
-
-
-   
+    }  
 
 }
 
+// ****** O autorce - konec ******
+
+// ****** Blog - začátek ******
+
+.blog {
+   
+    margin: 20px 20px;
+    padding: 0px 10px;
+   
+
+    &__head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: $second-font-family;
+        padding: 10px 5px;
+        background-color: $background-color;
+        max-width: 500px;
+        max-height: 540px;
+        margin: 0 auto 20px auto;
+
+            @media (min-width:901px) {
+                  max-width: 320px;
+                  max-height: 620px;
+                  font-size: 16px;
+            }
+    }
+
+    @media (min-width:901px) {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px;
+        align-items: normal;
+      
+        }
+
+    &__header {
+        border-bottom: 1px solid black;
+    
+     
+    }
+
+    &__email {
+         color: black;
+       
+
+    }
+
+    &__head-text {
+        flex-basis: calc(60% - 40px);
+        margin: 0 20px ;
+       
+    }
+  
+
+    &__photo {
+        width: 100%;
+        object-fit: cover;
+        margin: 0;
+        flex-shrink: 0;
+        flex-basis: 40%;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    &__article {
+        background-color: $primary-color;
+         padding: 20px 20px;
+         margin-bottom: 20px;
+        font-size: 14px;
+        font-family: $second-font-family;
+       line-height: 1.5;
+        border-radius: 5px;
+        color: rgb(252, 244, 244);
+        min-height: 250px;
+
+         @media (min-width:901px) {
+            min-height: 280px;
+            font-size: 16px;
+         }
+
+    }
+
+    &__article-photo {
+        max-width: 250px;
+        float: left;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+
+        @media (min-width:901px) {
+            max-width: 300px;
+        }
+
+    }
+
+    &__article2 {
+        background-color: $second-color;
+    }
+
+    &__header-small {
+        font-size: 18px;
+        border-bottom: 1px solid  rgb(252, 244, 244);
+    }
+
+    /* nefunguje, proč???
+    &__articles:nth-child(odd) {
+        background-color: $second-color;
+    } */
+
+
+    
+}
 
 
