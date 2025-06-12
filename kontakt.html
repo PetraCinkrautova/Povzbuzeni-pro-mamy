@@ -2,3 +2,58 @@
 layout: layouts/uvodni-strana.njk
 title: Kontakt
 ---
+<div class="contact-flex">
+<div class="background-contact">
+<div class="contact">
+
+<section class="contact__writer">
+<h3 class="contact__header">Kontakt na autorku</h3>
+<p>Mgr. Petra Cinkrautová <br>
+<a class="contact__email" href="mailo:povzbuzenipromamy@gmail.cz"></a>povzbuzenipromamy@gmail.cz <br>
++ 420 773 597 974</p>
+
+ <a class="contact__instagram" href="https://www.instagram.com/">Instagram</a>
+</section>
+
+<section class="contact__form">
+    <h3 class="contact__header">Kontaktní formulář</h3>
+    <form action="#">
+        <div class="contact__input-box">
+            <label class="contact__label" for="jmeno">Jméno a příjmení<span class="contact__grey-field">*</span></label>
+            <input class="contact__input" type="text" name="jmeno" id="jmeno" required>
+        </div>
+        <div class="contact__input-box">
+            <label class="contact__label" for="email">E-mail<span class="contact__grey-field">*</span></label>
+            <input class="contact__input" type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label class="contact__label" for="question-area">Vyberte prosím oblast, které se dotaz týká:</label>
+            <select class="contact__input" name="question-area" id="question-area">
+                <option value="Dotaz-na-objednavku" selected>Dotaz na objednávku</option>
+                <option value="Reklamace">Reklamace</option>
+                <option value="">Jiné</option>  
+            </select>
+        </div>
+        <div>
+            <label class="contact__label"  for="zprava">Zde prosím napište svou zprávu:</label>
+            <textarea class="contact__input" name="zprava" id="zprava" rows="8">Dobrý den, </textarea>
+        </div>
+        
+        <button class="contact__button" type="submit">Odeslat</button>
+        
+    </form>
+
+
+</section>
+
+</div>
+</div>
+
+<section class="contact-tips">
+    <h3 class="contact-tips__header">Pokud na mateřské nebo rodičovské dovolené potřebuješ pomoc nějakého odborníka, zde je pár odkazů na skupiny, které Ti mohou pomoci:</h3>
+    <p>Rady ohledně kojení: <a class="contact-tips__link" href="https://www.kojeni.cz/">https://www.kojeni.cz/</a></p>
+    <p>Pomoc rodičům samoživitelům: <a class="contact-tips__link" href="https://klubsvobodnychmatek.cz/">https://klubsvobodnychmatek.cz/</a></p>
+    <p>Právní a psychologická pomoc matkám: <a class="contact-tips__link" href="https://www.aperio.cz/poradna">https://www.aperio.cz/poradna</a> </p>
+    <p>Pomoc matkám s psychickými potížemi: <a class="contact-tips__link" href="https://www.usmevmamy.cz/">https://www.usmevmamy.cz/</a></p>
+</section>
+</div>

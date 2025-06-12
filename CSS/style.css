@@ -293,6 +293,7 @@ body {
 }
 .book-benefits-text__header {
   font-size: 18px;
+  margin-top: 0;
 }
 @media (min-width: 1150px) {
   .book-benefits-text__header {
@@ -324,9 +325,8 @@ body {
 }
 .book-benefits-photo__img {
   width: 100%;
-  margin: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  /* margin: 0;
+   object-fit: cover;*/
 }
 
 .reading-tips__photo {
@@ -403,10 +403,20 @@ body {
   color: white;
   border-radius: 10px;
 }
+@media (min-width: 1150px) {
+  .reviews__box {
+    width: 400px;
+  }
+}
 .reviews__text {
   font-family: "Lora", serif;
   font-size: 14px;
   line-height: 1.7;
+}
+@media (min-width: 1150px) {
+  .reviews__text {
+    font-size: 16px;
+  }
 }
 .reviews__text br {
   margin-bottom: 20px;
@@ -634,4 +644,125 @@ body {
 .blog__header-small {
   font-size: 18px;
   border-bottom: 1px solid rgb(252, 244, 244);
+}
+
+@media (min-width: 1000px) {
+  .contact-flex {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.background-contact {
+  background-color: #F9F9F9;
+  opacity: 90%;
+  margin: 20px 20px;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Lora", serif;
+  font-size: 14px;
+  line-height: 2;
+}
+.contact__header {
+  border-bottom: 1px solid black;
+}
+.contact__form {
+  max-width: 300px;
+  position: relative;
+  padding-bottom: 50px;
+}
+.contact__input {
+  width: 100%;
+  font: "Lora", serif;
+  background-color: rgb(196, 221, 245);
+  border: 1px solid #232C57;
+}
+.contact__label {
+  display: block;
+  margin-top: 10px;
+  font-family: "Lora", serif;
+}
+.contact__button {
+  margin: 10px 0;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  background-color: rgb(196, 221, 245);
+  padding: 5px 30px;
+  color: black;
+  margin-top: 40px;
+  font-family: "Lora", serif;
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: 1.7;
+  font-weight: 600;
+  box-shadow: 1px 1px 1px 1.5px rgb(227, 222, 222);
+  border-radius: 5px;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  border: 1px solid #232C57;
+}
+.contact__button:hover {
+  transform: scale(1.1);
+  background-color: #232C57;
+}
+.contact__button:active {
+  transform: scale(1);
+}
+.contact__writer {
+  max-width: 300px;
+}
+.contact__instagram {
+  color: black;
+  text-decoration: none;
+  background-image: url(/images/instagram-ikona.png);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: left;
+  padding-left: 20px;
+}
+@media (min-width: 650px) {
+  .contact {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1000px) {
+  .contact {
+    flex-basis: 70%;
+    justify-content: space-around;
+  }
+}
+
+.contact-tips {
+  background-color: #CD0046;
+  font-family: "Lora", serif;
+  color: white;
+  margin: 20px 20px 10px 20px;
+  padding: 20px;
+  max-width: 780px;
+  border-radius: 5px;
+}
+.contact-tips__header {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+.contact-tips__link {
+  color: black;
+}
+@media (min-width: 1000px) {
+  .contact-tips {
+    max-width: 300px;
+  }
+}
+@media (min-width: 1000px) {
+  .contact-tips {
+    flex-basis: 30%;
+  }
 }/*# sourceMappingURL=style.css.map */

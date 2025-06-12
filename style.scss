@@ -390,6 +390,7 @@ background-color: $background-color;
 
     &__header {
         font-size: 18px;
+        margin-top: 0;
      @media (min-width:1150px) {
         font-size: $fontsize-h2;
      }
@@ -422,8 +423,8 @@ background-color: $background-color;
 
     &__img {
     width: 100%;
-    margin: 0;
-    object-fit: cover;
+   /* margin: 0;
+    object-fit: cover;*/
 
     }
 }
@@ -509,12 +510,21 @@ background-color: $background-color;
         background-color: $primary-color;
         color: white;
         border-radius: 10px;
+
+         @media (min-width:1150px) {
+            width: 400px;
+         }
     }
 
     &__text {
         font-family: $second-font-family;
         font-size: 14px;
         line-height: 1.7;
+
+        
+     @media (min-width:1150px) {
+        font-size: 16px;
+     }
 
     }
     &__text br {
@@ -803,9 +813,156 @@ background-color: $background-color;
     &__articles:nth-child(odd) {
         background-color: $second-color;
     } */
-
-
-    
 }
 
+// ****** Blog - konec ******
 
+// ****** Kontakt - začátek ******
+
+.contact-flex {
+     @media (min-width:1000px) {
+        display: flex;
+        justify-content: space-around;
+
+    }
+}
+
+.background-contact {
+    background-color: $background-color;
+    opacity: 90%;
+    margin: 20px 20px;
+    padding: 10px 30px;
+    border-radius: 5px;
+   
+
+   
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: $second-font-family;
+    font-size: 14px;
+    line-height: 2;
+   
+
+    &__header {
+        border-bottom: 1px solid black;
+    }
+    
+    &__form {
+        max-width: 300px;
+        position: relative;
+        padding-bottom: 50px;
+
+         @media (min-width:1000px) {
+              
+         }
+    }
+
+    &__input {
+        width: 100%;
+        font: $second-font-family;
+        background-color: rgb(196, 221, 245);
+         border: 1px solid $second-color;
+    }
+
+    &__label {
+        display: block;
+        margin-top: 10px;
+        font-family: $second-font-family;
+        
+             
+       
+    }
+
+    &__button {
+        margin: 10px 0;
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        background-color: rgb(196, 221, 245);
+        padding: 5px 30px;
+        color: black;
+        margin-top: 40px;
+        font-family: $second-font-family;
+        font-size: 14px;
+        text-decoration: none;
+        letter-spacing: 1.7;
+        font-weight: 600;
+        box-shadow: 1px 1px 1px 1.5px rgb(227, 222, 222);
+        border-radius: 5px;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        border: 1px solid $second-color;;
+    }
+
+
+    &__button:hover {
+         transform:scale(1.1);
+         background-color: $second-color;
+
+    }
+
+    &__button:active {
+         transform:scale(1);
+    }
+        
+    
+    &__writer {
+        max-width: 300px;
+      
+    }
+
+    &__instagram {
+        color: black;
+        text-decoration: none;
+        background-image: url(/images/instagram-ikona.png);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: left;
+        padding-left: 20px;
+    }
+
+    @media (min-width:650px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+     @media (min-width:1000px) {
+        flex-basis: 70%;
+        justify-content: space-around;
+     }
+
+
+
+
+}
+ 
+.contact-tips {
+    background-color: $primary-color;
+    font-family: $second-font-family;
+    color: white;
+    margin: 20px 20px 10px 20px;
+    padding: 20px;
+    max-width: 780px;
+    border-radius: 5px;
+
+    &__header {
+        border-bottom: 1px solid white;
+        padding-bottom: 5px;
+    }
+
+    &__link {
+        color: black;
+    }
+
+     @media (min-width:1000px) {
+        max-width: 300px;
+     }
+      @media (min-width:1000px) {
+        flex-basis: 30%;
+     }
+
+}
