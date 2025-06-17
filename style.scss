@@ -546,9 +546,9 @@ background-color: $background-color;
 // ****** Paticka - zacatek ******
 
 .footer {
-    background-image: linear-gradient(#FFE7F7, #CD0046);
+    background-color: #90553C; /*linear-gradient(#FFE7F7, #CD0046);*/
     height: auto;
-    padding: 30px 30px 10px 30px;
+    padding: 30px 30px 2px 30px;
     font-family: $second-font-family;
     margin-top: 30px;
     font-size: 12px;
@@ -567,6 +567,10 @@ background-color: $background-color;
         text-align: center;
         font-size: 12px;
         margin-top: 40px;
+
+        @media (min-width:1150px) {
+            font-size: 14px;
+        }
       
     }
     &__file,
@@ -855,10 +859,8 @@ background-color: $background-color;
         max-width: 300px;
         position: relative;
         padding-bottom: 50px;
+        margin-left: 20px;
 
-         @media (min-width:1000px) {
-              
-         }
     }
 
     &__input {
@@ -902,6 +904,7 @@ background-color: $background-color;
     &__button:hover {
          transform:scale(1.1);
          background-color: $second-color;
+         color: white;
 
     }
 
@@ -927,12 +930,12 @@ background-color: $background-color;
 
     @media (min-width:650px) {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
-     @media (min-width:1000px) {
-        flex-basis: 70%;
-        justify-content: space-around;
+     @media (min-width:1150px) {
+ 
+        min-width: 600px;
      }
 
 
@@ -961,8 +964,173 @@ background-color: $background-color;
      @media (min-width:1000px) {
         max-width: 300px;
      }
-      @media (min-width:1000px) {
-        flex-basis: 30%;
+      @media (min-width:1150px) {
+        min-width: 400px;
+      
      }
+
+}
+
+// ****** Kontakt - konec ******
+
+// ****** Na nákup - začátek ******
+
+.book-abstract {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    
+
+    &__image {
+        width: 400px;
+        border: 0.5px solid rgb(147, 138, 138);
+        box-shadow: 2px 3px 3px 2px rgb(218, 217, 217);
+        border-radius: 5px 0 0 5px;
+       
+    }
+
+    &__box {
+    background-color: $background-color;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    opacity: 90%;
+    border-radius: 5px;
+    font-family: $second-font-family;
+    font-size: 14px;
+    line-height: 1.5;
+    position: relative;
+
+  
+    }
+
+    &__name1 {
+        color: $primary-color;
+    }
+    &__name2 {
+        color: $second-color;
+    }
+   
+       &__price {
+        background-color: $background-color;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: $second-font-family;
+        font-weight: bold;
+        position: absolute;
+        bottom: 0px;
+        right: 40px;
+    }
+}
+
+.order {
+    background-color: $background-color;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    font-family: $second-font-family;
+    font-size: 14px;
+
+    &__header {
+        border-bottom: 1px solid black;
+        margin-top: 30px;
+       
+    }
+
+    &__header-main {
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    
+    &__form {
+        max-width: 400px;
+        position: relative;
+        padding-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    &__input {
+        width: 100%;
+        font: $second-font-family;
+        background-color: rgb(196, 221, 245);
+         border: 1px solid $second-color;
+         padding: 5px;
+         border-radius: 5px;
+    }
+
+    &__label {
+        display: block;
+        margin-top: 10px;
+        font-family: $second-font-family;   
+    }
+
+
+    &__label-radio {
+        margin-left: 50px;
+        
+    }
+
+    &__label-check {
+        margin-left: 50px;
+    }
+
+    &__second-address {
+        color: rgb(52, 52, 135);
+        border-bottom: 1px solid rgb(52, 52, 135);
+
+        &__active {
+           color: gray ;
+        }
+        
+    }
+
+    &__second-address:active {
+        &__active {
+            display:block;
+        }
+    }
+
+
+
+
+    &__button {
+        margin: 10px 0;
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        background-color: rgb(196, 221, 245);
+        padding: 5px 30px;
+        color: black;
+        margin-top: 40px;
+        font-family: $second-font-family;
+        font-size: 14px;
+        text-decoration: none;
+        letter-spacing: 1.7;
+        font-weight: 600;
+        box-shadow: 1px 1px 1px 1.5px rgb(227, 222, 222);
+        border-radius: 5px;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        border: 1px solid $second-color;;
+    }
+
+
+    &__button:hover {
+         transform:scale(1.1);
+         background-color: $second-color;
+         color: white;
+
+    }
+
+    &__button:active {
+         transform:scale(1);
+    }
+
+    &__grey-field {
+        color: gray;
+        font-weight: 300;
+        font-size: 14px;
+    }
 
 }
