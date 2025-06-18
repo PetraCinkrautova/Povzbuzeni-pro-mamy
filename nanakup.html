@@ -19,105 +19,134 @@ title: Na nákup
 </section>
 
 <section class="order">
-    <p>Pro zakoupení knihy vyplňte prosím tento objednávkový formulář.</p>
+    <p class="order__instruction">Pro zakoupení knihy vyplňte prosím tento objednávkový formulář.</p>
 
     <h2 class="order__header-main">Objednávkový formulář</h2>
 
     <section class="order__form">
-        <h3 class="order__header">Fakturační údaje</h3>
-        <form action="#">
-            <div class="order__input-box">
-                <label class="order__label" for="jmeno">Jméno<span class="order__grey-field">*</span></label>
-                <input class="order__input" type="text" name="jmeno" id="jmeno" required>
-            </div>
-            <div class="order__input-box">
-                <label class="order__label" for="prijmeni">Příjmení<span class="order__grey-field">*</span></label>
-                <input class="order__input" type="text" name="prijmeni" id="prijmeni" required>
-            </div>
-            <div class="order__input-box">
-                <label class="order__label" for="address">Ulice, č. p.<span class="order__grey-field">*</span></label>
-                <input class="order__input" type="text" name="address" id="address" required>
-            </div>
-            <div class="order__input-box">
-                <label class="order__label" for="city">Město<span class="order__grey-field">*</span></label>
-                <input class="order__input" type="text" name="city" id="city" required>
-            </div>
-            <div class="order__input-box">
-                <label class="order__label" for="zip-code">PSČ<span class="order__grey-field">*</span></label>
-                <input class="order__input" type="text" name="zip-code" id="zip-code" required maxlength="5">
-            </div>
-            <div class="order__input-box">
-                <label class="order__label" for="email">E-mail<span class="order__grey-field">*</span></label>
-                <input class="order__input" type="email" name="email" id="email" required>
-            </div>
-            <div class="order__input-box">
-                <label class="order__label" for="phone">Telefonní číslo<span class="order__grey-field">*</span></label>
-                <input class="order__input" type="tel" name="phone" id="phone" required>
-            </div>
-            <div>
-                <label class="order__label" for="quantity">Vyberte prosím počet kusů</label>
-                <select class="order__input" name="quantity" id="quantity">
-                    <option value="1" selected>1 ks ... Cena 299 Kč</option>
-                    <option value="2">2 ks ... Cena 598 Kč</option>
-                    <option value="3">3 ks ... Cena 897 Kč</option>
-                    <option value="4">4 ks ... Cena 1 196 Kč</option>
-                    <option value="5">5 ks ... Cena 1 495 Kč</option>
-                    <option value="">Větší množství kusů (uveďte prosím požadované množství níže do Poznámky)</option></select>
-            </div>
-            <div>
-                <label class="order__label"  for="note">Poznámka</label>
-                <textarea class="order__input" name="note" id="note" rows="5">Dobrý den, </textarea>
-            </div>
+        <div class="order__grid">
+            <div class="order__first-address">
+                <h3 class="order__header">Fakturační údaje</h3>
+                <form action="#">
+                    <div class="order__input-box">
+                        <label class="order__label" for="jmeno">Jméno<span class="order__grey-field">*</span></label>
+                        <input class="order__input" type="text" name="jmeno" id="jmeno" required>
+                    </div>
+                    <div class="order__input-box">
+                        <label class="order__label" for="prijmeni">Příjmení<span class="order__grey-field">*</span></label>
+                        <input class="order__input" type="text" name="prijmeni" id="prijmeni" required>
+                    </div>
+                    <div class="order__input-box">
+                        <label class="order__label" for="address">Ulice, č. p.<span class="order__grey-field">*</span></label>
+                        <input class="order__input" type="text" name="address" id="address" required>
+                    </div>
+                    <div class="order__input-box">
+                        <label class="order__label" for="city">Město<span class="order__grey-field">*</span></label>
+                        <input class="order__input" type="text" name="city" id="city" required>
+                    </div>
+                    <div class="order__input-box">
+                        <label class="order__label" for="zip-code">PSČ<span class="order__grey-field">*</span></label>
+                        <input class="order__input" type="text" name="zip-code" id="zip-code" required maxlength="5">
+                    </div>
+                    <div class="order__input-box">
+                        <label class="order__label" for="email">E-mail<span class="order__grey-field">*</span></label>
+                        <input class="order__input" type="email" name="email" id="email" required>
+                    </div>
+                    <div class="order__input-box">
+                        <label class="order__label" for="phone">Telefonní číslo<span class="order__grey-field">*</span></label>
+                        <input class="order__input" type="tel" name="phone" id="phone" required>
+                    </div>
 
-            
-            <h3 class="order__header order__second-address">Doručovací adresa</h3>
-            <p class="order__grey-field">(Vyplňte v případě, že se liší od Vaší fakturační adresy.)</p>
-            <div class="order__second-address__active"> 
-                <div class="order__input-box">
-                    <label class="order__label" for="jmeno2">Jméno</label>
-                    <input class="order__input" type="text" name="jmeno2" id="jmeno2">
-                </div>
-                <div class="order__input-box">
-                    <label class="order__label" for="prijmeni2">Příjmení</label>
-                    <input class="order__input" type="text" name="prijmeni2" id="prijmeni2">
-                </div>
-                <div class="order__input-box">
-                    <label class="order__label" for="address2">Ulice, č. p.</label>
-                    <input class="order__input" type="text" name="address2" id="address2">
-                </div>
-                <div class="order__input-box">
-                    <label class="order__label" for="city2">Město</label>
-                    <input class="order__input" type="text" name="city2" id="city2">
-                </div>
-                <div class="order__input-box">
-                    <label class="order__label" for="zip-code2">PSČ</label>
-                    <input class="order__input" type="text" name="zip-code2" id="zip-code2" min="5" max="5">
-                </div>
-            </div>
 
-            <h3 class="order__header">Výběr dopravy</h3>
-            <div>
-            <input type="radio" name="balikovna" id="balikovna">
-            <label class="order__label-radio" for="balikovna">Balíkovna na adresu<span class="">79 Kč</span></label>
-           
-            </div>
-            <div>
-                  <input type="radio" name="PPL" id="PPL">
-            <label class="order__label-radio" for="PPL">  PPL na adresu<span>79 Kč</span></label>
-          
-            </div>
+                    <h3 class="order__header">Vyberte prosím počet kusů</h3>
+                    <div class="order__number-choice">
+                    <input type="radio" name="number-choice" id="1ks">
+                    <label class="order__label-radio" for="1ks">1ks</label>
+                    <p class="order__price-info">299 Kč</p>
+                    </div>
 
-            <h3 class="order__header">Platba</h3>
-           
-            <input type="checkbox" name="payment" id="payment" required>
-             <label  class="order__label-check" for="payment">Bankovním převodem<span>Zdarma</span></label>
+                    <div class="order__number-choice">
+                    <input type="radio" name="number-choice" id="1ks">
+                    <label class="order__label-radio" for="1ks">2ks</label>
+                    <p class="order__price-info">598 Kč</p>
+                    </div>
 
+                    <div class="order__number-choice">
+                    <input type="radio" name="number-choice" id="3ks">
+                    <label class="order__label-radio" for="3ks">3ks</label>
+                    <p class="order__price-info">897 Kč</p>
+                    </div>
+
+                    <div class="order__number-choice">
+                    <input type="radio" name="number-choice" id="Xks">
+                    <label class="order__label-radio" for="Xks">Větší množství kusů uveďte do Poznámky</label>
+                    </div>
         
-            <button class="order__button" type="submit">Odeslat objednávku</button>
+                    <div>
+                        <label class="order__label order__note"  for="note">Poznámka</label>
+                        <textarea class="order__input" name="note" id="note" rows="5"> </textarea>
+                    </div>
+
+                    <div class="order__checked-box">
+                        <a class="order__checked-box-link" href="#checked-box">Jiná doručovací adresa</a>
+                    </div>
+                
+                    <h3 class="order__header">Výběr dopravy</h3>
+                    <div class="order__choice">
+                    <input type="radio" name="delivery" id="balikovna">
+                    <label class="order__label-radio" for="balikovna">Balíkovna na adresu</label>
+                    <p class="order__price-info">79 Kč</p>
+                    </div>
+
+                    <div class="order__choice">
+                    <input type="radio" name="delivery" id="PPL">
+                    <label class="order__label-radio" for="PPL">PPL na adresu</label>
+                    <p class="order__price-info">79 Kč</p>
+                    </div>
+
+                    <h3 class="order__header">Platba</h3>
+                    <div class="order__choice">
+                    <input type="checkbox" name="payment" id="payment" required>
+                    <label  class="order__label-check" for="payment">Bankovním převodem</label>
+                    <p class="order__price-info">Zdarma</p>
+                    </div>
+                </div>
+
+                <div class="order__second-address" id="checked-box"> 
+                    <div class="order__second-address__checked">
+                    <h3 class="order__header">Jiná doručovací adresa</h3>
+                    <p class="order__second-address-info2">(Vyplňte v případě, že se liší od Vaší fakturační adresy.)</p>
+
+                        <div class="order__input-box">
+                            <label class="order__label" for="jmeno2">Jméno</label>
+                            <input class="order__input" type="text" name="jmeno2" id="jmeno2">
+                        </div>
+                        <div class="order__input-box">
+                            <label class="order__label" for="prijmeni2">Příjmení</label>
+                            <input class="order__input" type="text" name="prijmeni2" id="prijmeni2">
+                        </div>
+                        <div class="order__input-box">
+                            <label class="order__label" for="address2">Ulice, č. p.</label>
+                            <input class="order__input" type="text" name="address2" id="address2">
+                        </div>
+                        <div class="order__input-box">
+                            <label class="order__label" for="city2">Město</label>
+                            <input class="order__input" type="text" name="city2" id="city2">
+                        </div>
+                        <div class="order__input-box">
+                            <label class="order__label" for="zip-code2">PSČ</label>
+                            <input class="order__input" type="text" name="zip-code2" id="zip-code2" min="5" max="5">
+                        </div>
+                        </div>
+                </div>
+        
+                <button class="order__button" type="submit">Odeslat objednávku</button>
+
+            </div>
             
         </form>
 
-        <p>Milá budoucí čtenářko (nebo čtenáři), jakmile odešleš objednávku, očekávej prosím email s potvrzením objednávky a s udaji k platbě bankovním převodem. Email Ti zašle přímo autorka knihy, a proto může chvíli trvat, než zprávu sepíše a než doputuje až k Tobě.</p>
+        <p class="order__final-info">Vážený zákazníku, jakmile odešlete objednávku, očekávejte prosím email s potvrzením objednávky a s údaji k platbě bankovním převodem.</p>
 
     </section>
 
