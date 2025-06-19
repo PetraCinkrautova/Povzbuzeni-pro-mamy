@@ -456,6 +456,7 @@ body {
 .footer__file, .footer__instagram {
   color: black;
   text-decoration: none;
+  margin-bottom: 5px;
 }
 .footer__instagram {
   background-image: url(/images/instagram-ikona.png);
