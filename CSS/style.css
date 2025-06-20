@@ -228,12 +228,17 @@ body {
   order: 1;
 }
 .book-image__cover {
-  width: 380px;
+  width: 280px;
   margin-top: 30px;
   border: 0.5px solid rgb(147, 138, 138);
   box-shadow: 2px 3px 3px 2px rgb(218, 217, 217);
   display: block;
   border-radius: 5px 0 0 5px;
+}
+@media (min-width: 600px) {
+  .book-image__cover {
+    width: 380px;
+  }
 }
 @media (min-width: 1150px) {
   .book-image__cover {
@@ -325,6 +330,7 @@ body {
 }
 .book-benefits-photo__img {
   width: 100%;
+  border-radius: 5px;
   /* margin: 0;
    object-fit: cover;*/
 }
@@ -341,6 +347,7 @@ body {
 }
 .reading-tips__photo__img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .reading-tips__text {
@@ -466,7 +473,7 @@ body {
   padding-left: 20px;
 }
 .footer__kontakt-info {
-  margin-left: 20px;
+  margin-left: 25px;
 }
 .footer__kontakt-info p {
   margin: 5px;
@@ -485,6 +492,7 @@ body {
   background-color: #F9F9F9;
   margin: 40px 20px;
   padding: 20px 10px;
+  border-radius: 5px;
 }
 .about-writer__header {
   margin-top: 0;
@@ -575,6 +583,7 @@ body {
   font-family: "Lora", serif;
   padding: 10px 5px;
   background-color: #F9F9F9;
+  border-radius: 5px;
   max-width: 500px;
   max-height: 540px;
   margin: 0 auto 20px auto;
@@ -678,6 +687,10 @@ body {
 .contact__header {
   border-bottom: 1px solid black;
 }
+.contact__email {
+  color: black;
+  text-decoration: none;
+}
 .contact__form {
   max-width: 300px;
   position: relative;
@@ -689,6 +702,8 @@ body {
   font: "Lora", serif;
   background-color: rgb(196, 221, 245);
   border: 1px solid #232C57;
+  border-radius: 5px;
+  padding: 5px;
 }
 .contact__label {
   display: block;
@@ -794,10 +809,15 @@ body {
   }
 }
 .book-abstract__image {
-  width: 400px;
+  width: 280px;
   border: 0.5px solid rgb(147, 138, 138);
   box-shadow: 2px 3px 3px 2px rgb(218, 217, 217);
   border-radius: 5px 0 0 5px;
+}
+@media (min-width: 600px) {
+  .book-abstract__image {
+    width: 400px;
+  }
 }
 @media (min-width: 901px) {
   .book-abstract__image {

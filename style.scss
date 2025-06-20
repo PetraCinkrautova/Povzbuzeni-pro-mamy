@@ -303,7 +303,7 @@ background-color: $background-color;
   
 
     &__cover {
-        width: 380px;
+        width: 280px;
         margin-top: 30px;
         border: 0.5px solid rgb(147, 138, 138);
         box-shadow: 2px 3px 3px 2px rgb(218, 217, 217);
@@ -311,7 +311,9 @@ background-color: $background-color;
         border-radius: 5px 0 0 5px;
         
        
-       
+    @media (min-width:600px) {
+        width: 380px;
+    }
 
 
     @media (min-width:1150px) {
@@ -423,6 +425,7 @@ background-color: $background-color;
 
     &__img {
     width: 100%;
+    border-radius: 5px;
    /* margin: 0;
     object-fit: cover;*/
 
@@ -441,6 +444,7 @@ background-color: $background-color;
 
     &__img {
     width: 100%;
+    border-radius: 5px;
 
     }
 }
@@ -562,6 +566,7 @@ background-color: $background-color;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, auto);
+      
     }
     &__rigts {
         text-align: center;
@@ -589,7 +594,7 @@ background-color: $background-color;
     }
 
     &__kontakt-info {
-        margin-left: 20px;
+        margin-left: 25px;
     }
 
 
@@ -619,6 +624,7 @@ background-color: $background-color;
     background-color: $background-color;
     margin: 40px 20px;
     padding: 20px 10px;
+    border-radius: 5px;
 
      &__header {
         margin-top: 0;
@@ -725,6 +731,7 @@ background-color: $background-color;
         font-family: $second-font-family;
         padding: 10px 5px;
         background-color: $background-color;
+        border-radius: 5px;
         max-width: 500px;
         max-height: 540px;
         margin: 0 auto 20px auto;
@@ -855,6 +862,11 @@ background-color: $background-color;
     &__header {
         border-bottom: 1px solid black;
     }
+
+    &__email {
+        color: black;
+        text-decoration: none;
+    }
     
     &__form {
         max-width: 300px;
@@ -869,6 +881,8 @@ background-color: $background-color;
         font: $second-font-family;
         background-color: rgb(196, 221, 245);
          border: 1px solid $second-color;
+         border-radius: 5px;
+         padding: 5px;
     }
 
     &__label {
@@ -997,10 +1011,14 @@ background-color: $background-color;
 
 
     &__image {
-        width: 400px;
+        width: 280px;
         border: 0.5px solid rgb(147, 138, 138);
         box-shadow: 2px 3px 3px 2px rgb(218, 217, 217);
         border-radius: 5px 0 0 5px;
+
+        @media (min-width:600px) {
+            width: 400px;
+        }
 
          @media (min-width:901px) {
             margin-left: 20px;
