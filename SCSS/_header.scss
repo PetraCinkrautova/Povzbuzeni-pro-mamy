@@ -1,0 +1,140 @@
+@use 'variables';
+
+//***** hlavicka - zacatek *****
+
+.header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        @media (min-width:901px) {
+            display: inline-block;
+        }
+       
+     }
+   
+
+ 
+
+
+.header__body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+   &__logo {
+    width: 100% ;
+    
+     }
+     
+    @media (min-width:1150px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center ;
+ 
+    }
+       
+    }
+
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    border-top: 2px solid variables.$second-color;
+    border-bottom: 2px solid variables.$second-color;
+    padding-left: 0;
+  
+   
+    &__box {
+          transition-property: transform;
+        transition-duration: 0.2s;
+    }
+    
+
+    &__box:active {
+        transform: scale(0.9);
+    }
+    
+    
+
+    &__option {
+        text-decoration: none;
+        color: variables.$second-color;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: variables.$second-font-family;
+        margin: 10px;
+        padding: 10px;
+        text-transform: uppercase;
+      
+    
+
+        @media (min-width:901px) {
+        margin: 15px;
+        font-size: variables.$fontsize-h2;
+        font-weight: 600;
+        }   
+
+    }
+    
+
+    &__option:hover,
+    &__option:focus {
+        color: variables.$primary-color;
+        text-shadow: 2px 4px 4px 4px rgb(7, 6, 6);
+       
+    }
+
+   
+
+    @media (min-width:901px) {
+    flex-direction: row;
+    justify-content: center;
+    border-top: none;
+    height: auto;
+    margin: 10px;
+    padding-bottom: 5px;
+     }
+
+    @media (min-width:1150px) {
+    margin: 0;
+    padding-bottom: 0;
+    border: none;
+    height: auto;
+        
+     }
+  
+}
+
+.quote {
+    margin-top: 0;
+    background-color: variables.$background-color;
+    padding: 20px;
+    text-align: center;
+    font-family: variables.$second-font-family;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-bottom: 0;
+    color: black;
+    letter-spacing: 1.6;
+    font-size: 14px;
+
+   
+
+
+     }
+ 
+   
+
+
+//***** hlavicka - konec *****

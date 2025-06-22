@@ -1,0 +1,24 @@
+@use 'variables';
+
+
+// ****** Hithit-partial - začátek ******
+
+.hit-info {
+    border: 1px solid black;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #520620;
+    padding: 1px 20px;
+    font-family: variables.$second-font-family;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+   
+
+    &__link {
+        color: rgb(243, 199, 199);
+    }
+}

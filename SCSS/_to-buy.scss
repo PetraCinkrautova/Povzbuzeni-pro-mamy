@@ -1,0 +1,308 @@
+@use 'variables';
+
+// ****** Na nákup - začátek ******
+
+.book-abstract {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+     @media (min-width:901px) {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+     }
+
+         
+     @media (min-width:901px) {
+        justify-content: center;
+     }
+
+
+
+    &__image {
+        width: 280px;
+        border: 0.5px solid rgb(147, 138, 138);
+        box-shadow: 2px 3px 3px 2px rgb(218, 217, 217);
+        border-radius: 5px 0 0 5px;
+
+        @media (min-width:600px) {
+            width: 400px;
+        }
+
+         @media (min-width:901px) {
+            margin-left: 20px;
+         }
+       
+    }
+
+    &__box {
+    background-color: variables.$background-color;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    opacity: 90%;
+    border-radius: 5px;
+    font-family: variables.$second-font-family;
+    font-size: 14px;
+    line-height: 1.5;
+    position: relative;
+
+    @media (min-width:901px) {
+        margin-top: 0;
+        max-width: 500px;
+    }
+
+     @media (min-width:1150px) {
+        max-width: 700px;
+     }
+
+  
+    }
+
+    &__name1 {
+        color: variables.$primary-color;
+    }
+    &__name2 {
+        color: variables.$second-color;
+    }
+   
+       &__price {
+        background-color: variables.$background-color;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: variables.$second-font-family;
+        font-weight: bold;
+        position: absolute;
+        bottom: 0px;
+        right: 40px;
+    }
+}
+
+.order {
+    background-color: variables.$background-color;
+    margin: 10px 20px 20px 20px;
+    padding: 10px 20px 20px 20px;
+    font-family: variables.$second-font-family;
+    font-size: 14px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+
+    
+    @media (min-width:901px) {
+        max-width: 800px;
+    }
+    
+    @media (min-width:1150px) {
+        max-width: 1130px;
+    }
+
+    &__instruction {
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &__header {
+        border-bottom: 1px solid black;
+        margin-top: 30px;
+       
+    }
+
+    &__header-main {
+        border-bottom: 1px solid black;
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    &__form {
+        max-width: 400px;
+        position: relative;
+        padding-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+         @media (min-width:1150px) {
+            margin: 0;
+            max-width: 1000px;
+         }
+
+    }
+
+    &__grid {
+         @media (min-width:1150px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 1000px;
+           
+           
+            
+        }
+
+    }
+
+    &__input {
+        width: 100%;
+        font-family: variables.$second-font-family;
+        background-color: rgb(196, 221, 245);
+         border: 1px solid variables.$second-color;
+         padding: 5px;
+         border-radius: 5px;
+    }
+
+    &__label {
+        display: block;
+        margin-top: 10px;
+        font-family: variables.$second-font-family;   
+    }
+
+
+    &__label-radio {
+        margin-left: 50px;
+        
+    }
+
+    &__first-address {
+     @media (min-width:1150px) {
+        max-width: 600px;
+        margin-left: 60px;
+     }
+      
+    }
+
+    &__second-address {
+        margin-top: 20px;
+
+        @media (min-width:1150px) {
+            margin-left: 100px;
+            margin-top: 0;
+            max-width: 600px;
+
+        p {
+            margin-bottom: 40px;
+        }
+        }  
+    }
+
+    &__second-address-info1 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+   &__checked-box {
+    margin-top: 20px;
+       
+   }
+
+   &__checked-box-link {
+        color: black;
+
+    }
+
+   &__second-address {
+    color: gray;
+
+        
+
+   }
+
+   &__second-address input {
+     background-color: rgb(245, 245, 245);
+   }
+
+    
+/*
+    &__second-address {
+        color: rgb(52, 52, 135);
+        border-bottom: 1px solid rgb(52, 52, 135);
+
+        &__active {
+           color: gray ;
+           border: gray;
+        }
+        
+    }
+
+    &__second-address:active {
+        &__active {
+            display:block;
+        }
+    }
+
+    */
+
+    &__choice {
+        display: flex;
+        align-items: first baseline;
+        justify-content:space-between;
+    }
+
+    &__price-info {
+        margin-left: 10px;
+    }
+
+    &__number-choice {
+        display: flex;
+        align-items: first baseline;
+        justify-content:space-between;
+        margin-bottom: 10px;
+    }
+
+    &__note {
+        margin-top: 20px;
+    }
+
+
+
+
+    &__button {
+        margin: 10px 0;
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        background-color: rgb(196, 221, 245);
+        padding: 5px 30px;
+        color: black;
+        margin-top: 40px;
+        font-family: variables.$second-font-family;
+        font-size: 14px;
+        text-decoration: none;
+        letter-spacing: 1.7;
+        font-weight: 600;
+        box-shadow: 1px 1px 1px 1.5px rgb(227, 222, 222);
+        border-radius: 5px;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        border: 1px solid variables.$second-color;;
+    }
+
+
+    &__button:hover {
+         transform:scale(1.1);
+         background-color: variables.$second-color;
+         color: white;
+
+    }
+
+    &__button:active {
+         transform:scale(1);
+    }
+
+    &__grey-field {
+        color: gray;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    &__final-info {
+        text-align: center;
+       
+
+    }
+
+}
+
+// ****** Na nákup - konec ******

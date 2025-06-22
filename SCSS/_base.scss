@@ -1,0 +1,20 @@
+@use 'variables';
+
+
+
+body {box-sizing: border-box;
+background-color: variables.$background-color;
+
+
+}
+
+
+.maxsite {
+    margin: 0 auto;
+    max-width: 900px;
+
+    @media (min-width:901px) {
+        max-width: 1800px
+    }
+    
+}

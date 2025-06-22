@@ -1,0 +1,117 @@
+@use 'variables';
+
+// ****** Blog - začátek ******
+
+.blog {
+   
+    margin: 20px 20px;
+    padding: 0px 10px;
+   
+
+    &__head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: variables.$second-font-family;
+        padding: 10px 5px;
+        background-color: variables.$background-color;
+        border-radius: 5px;
+        max-width: 500px;
+        max-height: 540px;
+        margin: 0 auto 20px auto;
+
+            @media (min-width:901px) {
+                  max-width: 320px;
+                  max-height: 620px;
+                  font-size: 16px;
+            }
+    }
+
+    @media (min-width:901px) {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px;
+        align-items: normal;
+      
+        }
+
+    &__header {
+        border-bottom: 1px solid black;
+    
+     
+    }
+
+    &__email {
+         color: black;
+       
+
+    }
+
+    &__head-text {
+        flex-basis: calc(60% - 40px);
+        margin: 0 20px ;
+       
+    }
+  
+
+    &__photo {
+        width: 100%;
+        object-fit: cover;
+        margin: 0;
+        flex-shrink: 0;
+        flex-basis: 40%;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    &__article {
+        background-color: variables.$primary-color;
+         padding: 20px 20px;
+         margin-bottom: 20px;
+        font-size: 14px;
+        font-family: variables.$second-font-family;
+       line-height: 1.5;
+        border-radius: 5px;
+        color: rgb(252, 244, 244);
+        min-height: 250px;
+
+         @media (min-width:901px) {
+            min-height: 280px;
+            font-size: 16px;
+         }
+
+    }
+
+    &__article-photo {
+        max-width: 250px;
+        float: left;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+
+        @media (min-width:901px) {
+            max-width: 300px;
+        }
+
+    }
+
+    &__article2 {
+        background-color: variables.$second-color;
+    }
+
+    &__header-small {
+        font-size: 18px;
+        border-bottom: 1px solid  rgb(252, 244, 244);
+    }
+
+    /* nefunguje, proč???
+    &__articles:nth-child(odd) {
+        background-color: $second-color;
+    } */
+}
+
+// ****** Blog - konec ******

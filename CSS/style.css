@@ -79,7 +79,7 @@ body {
     font-weight: 600;
   }
 }
-.menu__option:hover {
+.menu__option:hover, .menu__option:focus {
   color: #CD0046;
   text-shadow: 2px 4px 4px 4px rgb(7, 6, 6);
 }
@@ -261,7 +261,7 @@ body {
   transition-property: transform;
   transition-duration: 0.3s;
 }
-.book-image__bottom:hover {
+.book-image__bottom:hover, .book-image__bottom:focus {
   transform: scale(1.1);
   background-color: #a91244;
 }
@@ -699,11 +699,12 @@ body {
 }
 .contact__input {
   width: 100%;
-  font: "Lora", serif;
+  font-family: "Lora", serif;
   background-color: rgb(196, 221, 245);
   border: 1px solid #232C57;
   border-radius: 5px;
   padding: 5px;
+  font-size: 14px;
 }
 .contact__label {
   display: block;
@@ -730,7 +731,7 @@ body {
   transition-duration: 0.3s;
   border: 1px solid #232C57;
 }
-.contact__button:hover {
+.contact__button:hover, .contact__button:focus {
   transform: scale(1.1);
   background-color: #232C57;
   color: white;
@@ -939,7 +940,7 @@ body {
 }
 .order__input {
   width: 100%;
-  font: "Lora", serif;
+  font-family: "Lora", serif;
   background-color: rgb(196, 221, 245);
   border: 1px solid #232C57;
   padding: 5px;

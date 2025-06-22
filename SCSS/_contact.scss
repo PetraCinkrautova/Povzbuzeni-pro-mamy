@@ -1,0 +1,162 @@
+@use 'variables';
+
+// ****** Kontakt - začátek ******
+
+.contact-flex {
+     @media (min-width:1000px) {
+        display: flex;
+        justify-content: space-around;
+
+    }
+}
+
+.background-contact {
+    background-color: variables.$background-color;
+    opacity: 90%;
+    margin: 20px 20px;
+    padding: 10px 30px;
+    border-radius: 5px;
+   
+
+   
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: variables.$second-font-family;
+    font-size: 14px;
+    line-height: 2;
+   
+
+    &__header {
+        border-bottom: 1px solid black;
+    }
+
+    &__email {
+        color: black;
+        text-decoration: none;
+    }
+    
+    &__form {
+        max-width: 300px;
+        position: relative;
+        padding-bottom: 50px;
+        margin-left: 20px;
+
+    }
+
+    &__input {
+        width: 100%;
+        font-family: variables.$second-font-family;
+        background-color: rgb(196, 221, 245);
+         border: 1px solid variables.$second-color;
+         border-radius: 5px;
+         padding: 5px;
+         font-size: 14px;
+    }
+
+    &__label {
+        display: block;
+        margin-top: 10px;
+        font-family: variables.$second-font-family;
+        
+             
+       
+    }
+
+    &__button {
+        margin: 10px 0;
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        background-color: rgb(196, 221, 245);
+        padding: 5px 30px;
+        color: black;
+        margin-top: 40px;
+        font-family: variables.$second-font-family;
+        font-size: 14px;
+        text-decoration: none;
+        letter-spacing: 1.7;
+        font-weight: 600;
+        box-shadow: 1px 1px 1px 1.5px rgb(227, 222, 222);
+        border-radius: 5px;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        border: 1px solid variables.$second-color;;
+    }
+
+
+    &__button:hover,
+    &__button:focus {
+         transform:scale(1.1);
+         background-color: variables.$second-color;
+         color: white;
+
+    }
+
+    &__button:active {
+         transform:scale(1);
+    }
+        
+    
+    &__writer {
+        max-width: 300px;
+      
+    }
+
+    &__instagram {
+        color: black;
+        text-decoration: none;
+        background-image: url(/images/instagram-ikona.png);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: left;
+        padding-left: 20px;
+    }
+
+    @media (min-width:650px) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+     @media (min-width:1150px) {
+ 
+        min-width: 600px;
+     }
+
+
+
+
+}
+ 
+.contact-tips {
+    background-color: variables.$primary-color;
+    font-family: variables.$second-font-family;
+    color: white;
+    margin: 20px 20px 10px 20px;
+    padding: 20px;
+    max-width: 780px;
+    border-radius: 5px;
+
+    &__header {
+        border-bottom: 1px solid white;
+        padding-bottom: 5px;
+    }
+
+    &__link {
+        color: black;
+    }
+
+     @media (min-width:1000px) {
+        max-width: 300px;
+     }
+      @media (min-width:1150px) {
+        min-width: 400px;
+      
+     }
+
+}
+
+// ****** Kontakt - konec ******

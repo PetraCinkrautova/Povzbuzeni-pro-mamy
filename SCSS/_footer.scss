@@ -1,0 +1,71 @@
+@use 'variables';
+
+// ****** Paticka - zacatek ******
+
+.footer {
+    background-color: #f0cdbf; /*linear-gradient(#FFE7F7, #CD0046);*/
+    height: auto;
+    padding: 30px 30px 2px 30px;
+    font-family: variables.$second-font-family;
+    margin-top: 30px;
+    font-size: 12px;
+        
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__buy-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+      
+    }
+    &__rigts {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 40px;
+
+        @media (min-width:1150px) {
+            font-size: 14px;
+        }
+      
+    }
+    &__file,
+    &__instagram {
+        color: black;
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+    &__instagram {
+        background-image: url(/images/instagram-ikona.png);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: left;
+        padding-left: 20px;
+        
+    }
+
+    &__kontakt-info {
+        margin-left: 25px;
+    }
+
+
+    &__kontakt-info p {
+        margin: 5px;
+
+    }
+
+     &__email {
+        color: black;
+        text-decoration: none;
+
+    }
+
+       @media (min-width:1150px) {
+        font-size: 14px;
+       }
+
+}
+
+// ****** Paticka - konec ******
