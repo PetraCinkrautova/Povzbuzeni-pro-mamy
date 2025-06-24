@@ -396,7 +396,7 @@ body {
 }
 .reviews__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 300px;
   gap: 40px;
   text-align: center;
@@ -434,7 +434,7 @@ body {
 }
 
 .footer {
-  background-color: #f0cdbf; /*linear-gradient(#FFE7F7, #CD0046);*/
+  background-color: rgb(241, 234, 234); /*linear-gradient(#FFE7F7, #CD0046);*/
   height: auto;
   padding: 30px 30px 2px 30px;
   font-family: "Lora", serif;
