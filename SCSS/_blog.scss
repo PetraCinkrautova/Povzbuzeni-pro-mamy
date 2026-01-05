@@ -13,8 +13,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
-        line-height: 1.5;
+        font-size: 16px;
+        line-height: 2;
         font-family: variables.$second-font-family;
         padding: 10px 5px;
         background-color: variables.$background-color;
@@ -69,14 +69,14 @@
     }
 
     &__article {
-        background-color: variables.$primary-color;
+        background-color: variables.$background-color;
          padding: 20px 20px;
          margin-bottom: 20px;
-        font-size: 14px;
+        font-size: 16px;
         font-family: variables.$second-font-family;
-       line-height: 1.5;
+       line-height: 2;
         border-radius: 5px;
-        color: rgb(252, 244, 244);
+        color: black;
         min-height: 250px;
 
          @media (min-width:901px) {
@@ -100,12 +100,12 @@
     }
 
     &__article2 {
-        background-color: variables.$second-color;
+        background-color: variables.$background-color;
     }
 
     &__header-small {
-        font-size: 18px;
-        border-bottom: 1px solid  rgb(252, 244, 244);
+        font-size: 24px;
+        border-bottom: 1px solid  black;
     }
 
     /* nefunguje, proč???
