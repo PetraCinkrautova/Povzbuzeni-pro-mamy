@@ -209,12 +209,12 @@ body {
     grid-row: 1;
     grid-column: 2/3;
     display: block;
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media (min-width: 1500px) {
   .book-info {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -308,12 +308,13 @@ body {
 @media (min-width: 901px) {
   .book-benefits-text {
     grid-row: 3/5;
+    font-size: 18px;
   }
 }
 @media (min-width: 1150px) {
   .book-benefits-text {
     grid-row: 2;
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -375,7 +376,7 @@ body {
   .reading-tips__text {
     grid-column: 2/3;
     grid-row: 3;
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -524,12 +525,12 @@ body {
 }
 @media (min-width: 1150px) {
   .about-writer__text1, .about-writer__text3 {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 @media (min-width: 1500px) {
   .about-writer__text1, .about-writer__text3 {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .about-writer__text2 {
@@ -541,13 +542,13 @@ body {
 }
 @media (min-width: 1150px) {
   .about-writer__text2 {
-    font-size: 14px;
+    font-size: 18px;
     grid-column: 2/3;
   }
 }
 @media (min-width: 1500px) {
   .about-writer__text2 {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .about-writer__photo {
@@ -657,7 +658,7 @@ body {
   float: left;
   border-radius: 5px;
   margin-right: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 @media (min-width: 901px) {
   .blog__article-photo {
