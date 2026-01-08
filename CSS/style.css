@@ -578,6 +578,11 @@ body {
   font-size: 18px;
   line-height: 1.8;
 }
+@media (min-width: 901px) {
+  .blog__name {
+    font-size: 22px;
+  }
+}
 .blog__head {
   display: flex;
   flex-direction: column;
@@ -644,7 +649,7 @@ body {
 @media (min-width: 901px) {
   .blog__article {
     min-height: 280px;
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 .blog__article-photo {
