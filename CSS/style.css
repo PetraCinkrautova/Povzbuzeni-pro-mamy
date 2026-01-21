@@ -1116,4 +1116,13 @@ body {
 }
 .hit-info__link {
   color: rgb(243, 199, 199);
+}
+
+.partial-mail {
+  font-family: "Lora", serif;
+  line-height: 1.5;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
