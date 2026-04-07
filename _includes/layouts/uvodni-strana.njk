@@ -15,16 +15,28 @@
         <img class="header__logo" src="/images/Povzbuzení pro mámy_logo 1.svg" alt="logo-povzbuzeni-pro-mamy">
         <nav >
         <ul class="menu">
-            <li class="menu__box"><a class="menu__option" href="/">Blog</a></li>
-            <li class="menu__box"><a class="menu__option" href="/blog/">Kniha</a></li>
-            <li class="menu__box"><a class="menu__option" href="/oautorce/">O autorce</a></li>
-            <li class="menu__box"><a class="menu__option" href="/kontakt/">Kontakt</a></li>
-            <li class="menu__box"><a class="menu__option" href="/nanakup">Na nákup</a></li>
+            <li class="menu__box"><a class="menu__option {{'menu__option--active' if page.fileSlug === ''}}" href="/">Blog</a></li>
+            <li class="menu__box"><a class="menu__option {{'menu__option--active' if page.fileSlug === 'oknize'}}" href="/oknize/">Kniha</a></li>
+            <li class="menu__box"><a class="menu__option {{'menu__option--active' if page.fileSlug === 'oautorce'}}" href="/oautorce/">O autorce</a></li>
+            <li class="menu__box"><a class="menu__option {{'menu__option--active' if page.fileSlug === 'kontakt'}}" href="/kontakt/">Kontakt</a></li>
+          <!--  <li class="menu__box"><a class="menu__option {{'menu__option--active' if page.fileSlug === 'nanakup'}}" href="/nanakup/">Na nákup</a></li>-->
+             <li class="menu__box"><a class="menu__option {{'menu__option--active' if page.fileSlug === 'podpora'}}"  href="/podpora/">Podpora</a></li>
         </ul>
         </nav>
         </section>
          <p class="quote">...pro všechny mámy, které touží povzbudit - sebe či jiné mámy kolem.</p>
     </header>
+
+    
+
+
+      {% if page.fileSlug === 'article' %}
+
+    <div class="informace">
+        Vítejte!
+    </div>
+
+    {% endif %}
    
    
   
@@ -36,11 +48,9 @@
     <footer class="footer">
         <div class="footer__info">
             <section class="footer__buy-info">
-                <h3>O nákupu</h3>
-                <a class="footer__file" href="#">Obchodní podmínky</a>
-                <a class="footer__file" href="#">Reklamační řád</a>
-                <a class="footer__file" href="#">Soubory cookies</a>
-                <a class="footer__file" href="#">Podmínky ochrany osobních údajů</a>
+                <h3>Důležité informace</h3>
+                <a class="footer__file" href="/pdf/Informace o souborech cookies.pdf">Informace o souborech cookies</a>
+                <a class="footer__file" href="/pdf/Ochrana osobních údajů.pdf">Podmínky ochrany osobních údajů</a>
             </section>
             <section class="footer__kontakt-info">
                 <h3>Kontakt</h3>

@@ -117,6 +117,11 @@ body {
   font-size: 14px;
 }
 
+.menu__option--active {
+  color: #a74561;
+  text-shadow: 2px 4px 4px 4px rgb(7, 6, 6);
+}
+
 .background {
   background-image: url(/images/wood-pozadi.jpg);
   background-repeat: repeat;
@@ -569,10 +574,6 @@ body {
 .blog {
   margin: 20px 20px;
   padding: 0px 10px;
-  /* nefunguje, proč???
-  &__articles:nth-child(odd) {
-      background-color: $second-color;
-  } */
 }
 .blog__name {
   font-weight: 500px;
@@ -582,6 +583,16 @@ body {
 @media (min-width: 901px) {
   .blog__name {
     font-size: 22px;
+  }
+}
+.blog__date {
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+@media (min-width: 901px) {
+  .blog__date {
+    font-size: 20px;
   }
 }
 .blog__head {
@@ -674,6 +685,18 @@ body {
   font-family: "Lora", serif;
   text-transform: uppercase;
 }
+.blog__header-collor {
+  font-size: 24px;
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+  color: #a74561;
+}
+.blog {
+  /* nefunguje, proč???
+  &__articles:nth-child(odd) {
+      background-color: $second-color;
+  } */
+}
 
 @media (min-width: 1000px) {
   .contact-flex {
@@ -698,7 +721,28 @@ body {
   font-size: 14px;
   line-height: 2;
 }
+.contact__firstinfo {
+  opacity: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Lora", serif;
+  background-color: rgb(241, 234, 234);
+  border-radius: 5px;
+  margin: 20px auto;
+  text-align: center;
+  max-width: 1000px;
+}
+@media (min-width: 901px) {
+  .contact__firstinfo {
+    font-size: 16px;
+  }
+}
 .contact__header {
+  border-bottom: 1px solid black;
+}
+.contact__header1 {
   border-bottom: 1px solid black;
 }
 .contact__email {
@@ -931,25 +975,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
-  /*
-      &__second-address {
-          color: rgb(52, 52, 135);
-          border-bottom: 1px solid rgb(52, 52, 135);
-
-          &__active {
-             color: gray ;
-             border: gray;
-          }
-
-      }
-
-      &__second-address:active {
-          &__active {
-              display:block;
-          }
-      }
-
-      */
 }
 @media (min-width: 901px) {
   .order {
@@ -1046,6 +1071,27 @@ body {
 .order__second-address input {
   background-color: rgb(245, 245, 245);
 }
+.order {
+  /*
+      &__second-address {
+          color: rgb(52, 52, 135);
+          border-bottom: 1px solid rgb(52, 52, 135);
+
+          &__active {
+             color: gray ;
+             border: gray;
+          }
+
+      }
+
+      &__second-address:active {
+          &__active {
+              display:block;
+          }
+      }
+
+      */
+}
 .order__choice {
   display: flex;
   align-items: first baseline;
@@ -1102,17 +1148,18 @@ body {
 
 .hit-info {
   border: 1px solid black;
-  max-width: 100%;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   background-color: #520620;
-  padding: 1px 20px;
+  padding: 10px 50px 20px 50px;
   font-family: "Lora", serif;
   line-height: 1.5;
   color: white;
   text-align: center;
   font-weight: 600;
   font-size: 16px;
+  border-radius: 10px;
 }
 .hit-info__link {
   color: rgb(243, 199, 199);
@@ -1125,4 +1172,88 @@ body {
   text-align: center;
   font-weight: 600;
   font-size: 16px;
+}
+
+.odmeny {
+  opacity: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Lora", serif;
+  background-color: rgb(241, 234, 234);
+  border-radius: 5px;
+  margin: 20px;
+}
+@media (min-width: 901px) {
+  .odmeny {
+    font-size: 16px;
+  }
+}
+
+.clanky {
+  background-color: whitesmoke;
+  opacity: 90%;
+  padding: 20px;
+  margin: 20px 20px;
+  border-radius: 10px;
+}
+
+.clanek-boxik {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 30px;
+  margin: 30px;
+}
+.clanek-boxik__foto {
+  width: 100%;
+}
+
+.clanky-box {
+  background-color: whitesmoke;
+  opacity: 90%;
+  padding: 20px;
+}
+
+.clanky-image {
+  max-width: 400px;
+  margin: 20px;
+}
+
+.article {
+  background-color: white;
+  opacity: 90%;
+  padding: 30px;
+}
+
+.article__title {
+  font-size: 48px;
+  margin: 0;
+}
+
+.article__meta {
+  color: silver;
+}
+
+.article__content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+}
+
+.article__perex {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.article__image {
+  display: block;
+  width: 100%;
+}
+
+.informace {
+  margin: 30px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  font-size: 30px;
 }/*# sourceMappingURL=style.css.map */

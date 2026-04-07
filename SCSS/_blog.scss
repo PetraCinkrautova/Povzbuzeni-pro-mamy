@@ -17,6 +17,17 @@
         }
         
     }
+
+    &__date {
+         font-weight: 500px;
+        font-size: 16px;
+        line-height: 1.8;
+
+        @media (min-width:901px) {
+        font-size: 20px
+        }
+        
+    }
    
 
     &__head {
@@ -121,6 +132,13 @@
         border-bottom: 1px solid  black;
         font-family: variables.$second-font-family;
         text-transform: uppercase;
+    }
+
+    &__header-collor {
+         font-size: 24px;
+        font-family: variables.$second-font-family;
+        text-transform: uppercase;
+        color: variables.$primary-color;
     }
 
     /* nefunguje, proč???

@@ -133,6 +133,13 @@
 
 
      }
+
+
+    .menu__option--active  {
+        color: variables.$primary-color;
+        text-shadow: 2px 4px 4px 4px rgb(7, 6, 6);
+       
+    }
  
    
 
