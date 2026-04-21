@@ -43,6 +43,48 @@ body {
   }
 }
 
+.nav-toggle {
+  display: block;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #232C57;
+  margin: 10px;
+}
+@media (min-width: 901px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
+.nav {
+  width: 100%;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.nav.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+}
+@media (min-width: 901px) {
+  .nav {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* když je menu otevřené */
+.nav.open {
+  display: block;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -54,6 +96,11 @@ body {
   border-top: 2px solid #232C57;
   border-bottom: 2px solid #232C57;
   padding-left: 0;
+}
+@media (max-width: 900px) {
+  .menu {
+    background-color: #F9F9F9;
+  }
 }
 .menu__box {
   transition-property: transform;
@@ -96,6 +143,7 @@ body {
 @media (min-width: 1150px) {
   .menu {
     margin: 0;
+    justify-content: right;
     padding-bottom: 0;
     border: none;
     height: auto;
@@ -136,6 +184,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
 }
 @media (min-width: 901px) {
   .main {
@@ -387,7 +436,7 @@ body {
 
 .reviews {
   width: 100%;
-  margin: 30px;
+  margin: 30px 30px 0px 30px;
 }
 .reviews__header {
   color: #a74561;
@@ -406,33 +455,43 @@ body {
   grid-template-rows: 300px;
   gap: 40px;
   text-align: center;
-  margin: 30px 0;
+  margin: 30px 0 0 30px;
   overflow-x: scroll;
 }
 .reviews__box {
-  width: 300px;
-  padding: 20px;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
   background-color: #a74561;
   color: white;
   border-radius: 10px;
 }
 @media (min-width: 1150px) {
   .reviews__box {
-    width: 400px;
+    width: 300px;
+    height: 250px;
+    padding: 20px;
   }
 }
 .reviews__text {
   font-family: "Lora", serif;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 10px;
 }
 @media (min-width: 1150px) {
   .reviews__text {
     font-size: 16px;
+    line-height: 1.7;
   }
 }
 .reviews__text br {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+@media (min-width: 1150px) {
+  .reviews__text br {
+    margin-bottom: 20px;
+  }
 }
 .reviews__name {
   border-top: 1px solid white;
@@ -730,12 +789,13 @@ body {
   font-family: "Lora", serif;
   background-color: rgb(241, 234, 234);
   border-radius: 5px;
-  margin: 20px auto;
+  margin: 20px;
   text-align: center;
   max-width: 1000px;
 }
-@media (min-width: 901px) {
+@media (min-width: 1100px) {
   .contact__firstinfo {
+    margin: 20px auto;
     font-size: 16px;
   }
 }
