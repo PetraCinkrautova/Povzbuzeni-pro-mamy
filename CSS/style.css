@@ -463,7 +463,7 @@ body {
   width: max-content;
   text-align: center;
   margin: 10px 0 0 0px;
-  animation: scrollReviews 70s linear infinite;
+  animation: scrollReviews 170s linear infinite;
 }
 @keyframes scrollReviews {
   0% {
