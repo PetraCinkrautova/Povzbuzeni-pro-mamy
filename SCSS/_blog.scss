@@ -7,16 +7,51 @@
     margin: 20px 20px;
     padding: 0px 10px;
 
-    &__name {
-        font-weight: 500px;
+    &__name1 {
+        
         font-size: 18px;
         line-height: 1.8;
+        font-weight: bold;
+        display: block;
+        cursor: pointer;
+        margin-bottom: 10px;
+        position: relative;
 
         @media (min-width:901px) {
         font-size: 22px
         }
         
     }
+
+    &__toggle {
+    display: none;
+    }
+
+    &__name1::before {
+    content: none;
+    }
+
+    &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.8;
+    }
+
+     &__name1::after {
+    content: "▼";
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s;
+    font-weight: 700
+    }
+
+    &__content {
+    max-height: 10px;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    }
+
+
 
     &__date {
          font-weight: 500px;
@@ -42,14 +77,15 @@
         background-color: rgb(241, 234, 234);
         border-radius: 5px;
         max-width: 500px;
-        max-height: 640px;
+        //max-height: 640px;
         margin: 0 auto 20px auto;
 
             @media (min-width:901px) {
                   max-width: 320px;
-                  max-height: 620px;
+                  //max-height: 100px;
+                  //max-height: 620px;
                   font-size: 16px;
-            }
+            } 
     }
 
     @media (min-width:901px) {
@@ -57,7 +93,7 @@
         grid-template-columns: 320px 510px;
         grid-template-rows: auto auto;
         gap: 20px;
-        align-items: normal;
+        align-items: start;
        
       
         }
@@ -65,6 +101,7 @@
     @media (min-width:1000px) {
           grid-template-columns: 320px 1fr;
     }
+          
 
     &__header {
         border-bottom: 1px solid black;
@@ -74,9 +111,20 @@
     }
 
     &__second-info {
+          margin-top: 30px;
+        @media (max-width:901px) {
+            display: none;
+          
+        }
+
+    }
+
+    &__book-image {
         @media (max-width:901px) {
             display: none;
         }
+        max-width: 200px;
+        margin: 20px 0;
 
     }
 
@@ -89,6 +137,7 @@
     &__head-text {
         flex-basis: calc(60% - 40px);
         margin: 0 20px ;
+        
        
     }
   
@@ -161,6 +210,14 @@
     &__articles:nth-child(odd) {
         background-color: $second-color;
     } */
+}
+
+.blog__toggle:checked + .blog__name1::after {
+  transform: rotate(180deg);
+}
+
+.blog__toggle:checked + .blog__name1 + .blog__content {
+  max-height: 640px;
 }
 
 // ****** Blog - konec ******
