@@ -344,28 +344,16 @@
     }
 
     &__track {
-    display: flex;
-    gap: 20px;
-    width: max-content;
-    text-align: center;
-    margin: 10px 0 0 0px;
-
-    animation: scrollReviews 170s linear infinite;
+  display: flex;
+  gap: 20px;
+  transition: transform 0.8s ease-in-out;
     }
 
-    @keyframes scrollReviews {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-    }
-
-
-    .reviews__track:hover {
+    &__track:hover {
     animation-play-state: paused;
     }
+
+
 
     &__box {
          flex: 0 0 200px; // neroste, nezmenšuje se, má pevnou šířku
@@ -412,5 +400,8 @@
    
 
 }
+
+
+    
 
 // ****** O knize - konec ******

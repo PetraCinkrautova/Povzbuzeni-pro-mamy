@@ -459,21 +459,9 @@ body {
 .reviews__track {
   display: flex;
   gap: 20px;
-  width: -moz-max-content;
-  width: max-content;
-  text-align: center;
-  margin: 10px 0 0 0px;
-  animation: scrollReviews 170s linear infinite;
+  transition: transform 0.8s ease-in-out;
 }
-@keyframes scrollReviews {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-.reviews .reviews__track:hover {
+.reviews__track:hover {
   animation-play-state: paused;
 }
 .reviews__box {
