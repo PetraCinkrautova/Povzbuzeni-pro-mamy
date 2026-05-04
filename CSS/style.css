@@ -49,8 +49,8 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  color: #232C57;
-  margin: 10px 10px 0px 10px;
+  color: #3a2e2a;
+  margin: 0px 10px 0px 10px;
 }
 @media (min-width: 901px) {
   .nav-toggle {
@@ -93,8 +93,8 @@ body {
   width: 100%;
   height: 150px;
   margin: 0;
-  border-top: 2px solid #232C57;
-  border-bottom: 2px solid #232C57;
+  border-top: 2px solid #3a2e2a;
+  border-bottom: 2px solid #3a2e2a;
   padding-left: 0;
 }
 @media (max-width: 900px) {
@@ -111,10 +111,11 @@ body {
 }
 .menu__option {
   text-decoration: none;
-  color: #232C57;
-  font-size: 14px;
-  font-weight: 600;
-  font-family: "Lora", serif;
+  color: #3a2e2a;
+  font-size: 16px;
+  font-weight: 1000;
+  letter-spacing: 1.6;
+  font-family: "Playfair Display", serif;
   margin: 10px;
   padding: 10px;
   text-transform: uppercase;
@@ -123,7 +124,7 @@ body {
   .menu__option {
     margin: 15px;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 1000;
   }
 }
 .menu__option:hover, .menu__option:focus {
@@ -155,7 +156,7 @@ body {
   background-color: #F9F9F9;
   padding: 20px;
   text-align: center;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   padding: 10px;
@@ -204,7 +205,7 @@ body {
 
 .book-info {
   margin-top: 0;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   font-size: 14px;
   order: 2;
@@ -235,12 +236,12 @@ body {
 }
 .book-info__header {
   margin-top: 0;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
 }
 .book-info__name1 {
   font-size: 24px;
-  color: #232C57;
+  color: #3a2e2a;
   margin-bottom: 30px;
 }
 .book-info__name2 {
@@ -308,7 +309,7 @@ body {
   padding: 10px 30px;
   color: white;
   margin-top: 40px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 16px;
   text-decoration: none;
   letter-spacing: 1.7;
@@ -347,7 +348,7 @@ body {
   background-color: #F9F9F9;
   opacity: 90%;
   padding: 20px;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.7;
   order: 4;
   font-size: 14px;
@@ -413,7 +414,7 @@ body {
   opacity: 90%;
   padding: 20px;
   font-size: 14px;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.7;
   order: 6;
   margin: 30px;
@@ -450,7 +451,7 @@ body {
   opacity: 90%;
   padding: 10px;
   border-radius: 5px;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
 }
 .reviews__viewport {
   overflow: hidden;
@@ -480,7 +481,7 @@ body {
   }
 }
 .reviews__text {
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   line-height: 1.5;
   margin: 10px;
@@ -508,7 +509,7 @@ body {
   background-color: rgb(241, 234, 234); /*linear-gradient(#FFE7F7, #CD0046);*/
   height: auto;
   padding: 30px 30px 2px 30px;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 30px;
   font-size: 12px;
 }
@@ -580,45 +581,45 @@ body {
 @media (min-width: 1150px) {
   .about-writer__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 480px;
     grid-template-rows: repeat(3 auto);
     gap: 5px;
-    align-items: normal;
+    align-items: center;
   }
 }
 .about-writer__text1, .about-writer__text3 {
-  font-family: "Lora", serif;
-  line-height: 1.5;
-  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
   padding: 10px;
   border-radius: 5px;
 }
 @media (min-width: 1150px) {
   .about-writer__text1, .about-writer__text3 {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (min-width: 1500px) {
   .about-writer__text1, .about-writer__text3 {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 .about-writer__text2 {
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 16px;
   padding: 10px;
   border-radius: 5px;
 }
 @media (min-width: 1150px) {
   .about-writer__text2 {
-    font-size: 18px;
-    grid-column: 2/3;
+    font-size: 20px;
+    grid-column: 1/2;
   }
 }
 @media (min-width: 1500px) {
   .about-writer__text2 {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 .about-writer__photo {
@@ -631,7 +632,7 @@ body {
 }
 @media (min-width: 1150px) {
   .about-writer__photo-box2 {
-    grid-column: 1/2;
+    grid-column: 2/3;
     grid-row: 2;
   }
 }
@@ -694,7 +695,7 @@ body {
   align-items: center;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   padding: 10px 5px;
   background-color: rgb(241, 234, 234);
   border-radius: 5px;
@@ -764,7 +765,7 @@ body {
   padding: 20px 20px;
   margin-bottom: 20px;
   font-size: 18px;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 2;
   border-radius: 5px;
   color: black;
@@ -799,12 +800,14 @@ body {
 .blog__header-small {
   font-size: 24px;
   border-bottom: 1px solid black;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+  margin-top: 0;
+  padding: 0;
 }
 .blog__header-collor {
   font-size: 24px;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: #a74561;
 }
@@ -842,7 +845,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 2;
 }
@@ -852,7 +855,7 @@ body {
   border-radius: 10px;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   background-color: rgb(241, 234, 234);
   border-radius: 5px;
   margin: 20px;
@@ -883,9 +886,9 @@ body {
 }
 .contact__input {
   width: 100%;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   background-color: rgb(196, 221, 245);
-  border: 1px solid #232C57;
+  border: 1px solid #3a2e2a;
   border-radius: 5px;
   padding: 5px;
   font-size: 14px;
@@ -893,7 +896,7 @@ body {
 .contact__label {
   display: block;
   margin-top: 10px;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
 }
 .contact__button {
   margin: 10px 0;
@@ -904,7 +907,7 @@ body {
   padding: 5px 30px;
   color: black;
   margin-top: 40px;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   text-decoration: none;
   letter-spacing: 1.7;
@@ -913,11 +916,11 @@ body {
   border-radius: 5px;
   transition-property: transform;
   transition-duration: 0.3s;
-  border: 1px solid #232C57;
+  border: 1px solid #3a2e2a;
 }
 .contact__button:hover, .contact__button:focus {
   transform: scale(1.1);
-  background-color: #232C57;
+  background-color: #3a2e2a;
   color: white;
 }
 .contact__button:active {
@@ -949,7 +952,7 @@ body {
 
 .contact-tips {
   background-color: #a74561;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   margin: 20px 20px 10px 20px;
   padding: 20px;
@@ -979,7 +982,7 @@ body {
   opacity: 90%;
   border-radius: 5px;
   color: black;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
 }
 @media (min-width: 1000px) {
   .calendar {
@@ -1058,7 +1061,7 @@ body {
   padding: 10px 20px;
   opacity: 90%;
   border-radius: 5px;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 1.5;
   position: relative;
@@ -1078,13 +1081,13 @@ body {
   color: #a74561;
 }
 .book-abstract__name2 {
-  color: #232C57;
+  color: #3a2e2a;
 }
 .book-abstract__price {
   background-color: #F9F9F9;
   padding: 10px 20px;
   font-size: 16px;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   position: absolute;
   bottom: 0px;
@@ -1095,7 +1098,7 @@ body {
   background-color: #F9F9F9;
   margin: 10px 20px 20px 20px;
   padding: 10px 20px 20px 20px;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   max-width: 500px;
   margin-left: auto;
@@ -1148,16 +1151,16 @@ body {
 }
 .order__input {
   width: 100%;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   background-color: rgb(196, 221, 245);
-  border: 1px solid #232C57;
+  border: 1px solid #3a2e2a;
   padding: 5px;
   border-radius: 5px;
 }
 .order__label {
   display: block;
   margin-top: 10px;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
 }
 .order__label-radio {
   margin-left: 50px;
@@ -1244,7 +1247,7 @@ body {
   padding: 5px 30px;
   color: black;
   margin-top: 40px;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   text-decoration: none;
   letter-spacing: 1.7;
@@ -1253,11 +1256,11 @@ body {
   border-radius: 5px;
   transition-property: transform;
   transition-duration: 0.3s;
-  border: 1px solid #232C57;
+  border: 1px solid #3a2e2a;
 }
 .order__button:hover {
   transform: scale(1.1);
-  background-color: #232C57;
+  background-color: #3a2e2a;
   color: white;
 }
 .order__button:active {
@@ -1279,7 +1282,7 @@ body {
   margin-right: auto;
   background-color: #520620;
   padding: 10px 50px 20px 50px;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   color: white;
   text-align: center;
@@ -1292,7 +1295,7 @@ body {
 }
 
 .partial-mail {
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   color: white;
   text-align: center;
@@ -1306,7 +1309,7 @@ body {
   border-radius: 10px;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   background-color: rgb(241, 234, 234);
   border-radius: 5px;
   margin: 20px;

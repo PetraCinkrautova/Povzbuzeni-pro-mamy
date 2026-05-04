@@ -25,10 +25,10 @@
 
      @media (min-width:1150px) {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 480px;
         grid-template-rows: repeat(3 auto);
         gap: 5px;
-        align-items: normal;
+        align-items: center;
 
     }
 
@@ -39,17 +39,20 @@
     &__text1,
     &__text3 {
     font-family: variables.$second-font-family;
-    line-height: 1.5;
-    font-size: 14px;
+    line-height: 1.8;
+    font-size: 16px;
     padding: 10px;
     border-radius: 5px;
 
      @media (min-width:1150px) {
-        font-size: 18px;
+        font-size: 20px;
+      
+        
+        
      }
 
      @media (min-width:1500px) {
-        font-size: 18px;
+        font-size: 20px;
      }
        
     }
@@ -57,16 +60,16 @@
      &__text2 {
     font-family: variables.$second-font-family;
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px;
     border-radius: 5px;
 
      @media (min-width:1150px) {
-        font-size: 18px;
-        grid-column: 2/3;
+        font-size: 20px;
+        grid-column: 1/2;
      }
        @media (min-width:1500px) {
-        font-size: 18px;
+        font-size: 20px;
      }
        
     }
@@ -82,11 +85,12 @@
     &__photo-box2,
     &__photo-box3{
         margin: 10px;
+
       }
 
     &__photo-box2 {
          @media (min-width:1150px) {
-            grid-column: 1/2;
+            grid-column: 2/3;
             grid-row: 2;
          }
     }  

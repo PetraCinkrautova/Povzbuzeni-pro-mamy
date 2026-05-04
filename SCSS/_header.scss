@@ -50,7 +50,7 @@
   border: none;
   cursor: pointer;
   color: variables.$second-color;
-  margin: 10px 10px 0px 10px;
+  margin: 0px 10px 0px 10px;
 
   @media (min-width:901px) {
     display: none;
@@ -117,9 +117,10 @@
     &__option {
         text-decoration: none;
         color: variables.$second-color;
-        font-size: 14px;
-        font-weight: 600;
-        font-family: variables.$second-font-family;
+        font-size: 16px;
+        font-weight: 1000;
+        letter-spacing: 1.6;
+        font-family: variables.$main-font-family;
         margin: 10px;
         padding: 10px;
         text-transform: uppercase;
@@ -128,8 +129,8 @@
 
         @media (min-width:901px) {
         margin: 15px;
-        font-size: variables.$fontsize-h2;
-        font-weight: 600;
+        font-size: 24px;
+        font-weight: 1000;
         }   
 
     }
