@@ -13,6 +13,10 @@ module.exports = function(eleventyConfig) {
   // Zkopírovat js/ to _site/js/
 	eleventyConfig.addPassthroughCopy("js");
 
+  eleventyConfig.addPassthroughCopy("sitemap.xml");
+
+  eleventyConfig.addPassthroughCopy("robots.txt");
+
   
 
   return {
