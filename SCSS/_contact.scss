@@ -12,7 +12,7 @@
 
 .background-contact {
     background-color: variables.$background-color;
-    opacity: 90%;
+    //opacity: 90%;
     margin: 20px 20px;
     padding: 10px 30px;
     border-radius: 5px;
@@ -30,13 +30,13 @@
     line-height: 2;
    
     &__firstinfo {
-    opacity: 90%;
+    //opacity: 90%;
     padding: 20px;
     border-radius: 10px;
     font-size: 16px;
     line-height: 1.5;
     font-family: variables.$second-font-family;
-    background-color: rgb(241, 234, 234);
+    background-color: variables.$background-color;
     border-radius: 5px; 
     margin: 20px;
     text-align: center;
